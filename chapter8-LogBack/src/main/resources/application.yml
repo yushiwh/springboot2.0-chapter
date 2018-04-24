@@ -1,0 +1,3 @@
+logging:
+  level:
+    com.yuqiyu.chapter12.controller: 'DEBUG'  #这个可以该级别 INFO DEBUG  ERROR
