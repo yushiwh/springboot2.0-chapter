@@ -1,0 +1,4 @@
+拦截器
+LoggerConfguration  配置拦截器的规则
+
+编写一个请求日志的拦截器LoggerInterceptor，自定义SpringMVC拦截器需要实现HandlerIntercptor接口，并且实现内部的三个方法
