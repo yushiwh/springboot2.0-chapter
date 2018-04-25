@@ -32,9 +32,11 @@ public class OAuth2Configuration {
     protected static class ResourceServerConfiguration extends ResourceServerConfigurerAdapter {
 
         @Autowired
+        // 自定义401错误码内容
         private CustomAuthenticationEntryPoint customAuthenticationEntryPoint;
 
         @Autowired
+        //登出控制清空accessToken
         private CustomLogoutSuccessHandler customLogoutSuccessHandler;
 
         @Override

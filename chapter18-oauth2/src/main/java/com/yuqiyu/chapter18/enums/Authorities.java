@@ -1,4 +1,4 @@
-package com.yuqiyu;
+package com.yuqiyu.chapter18.enums;
 
 public enum Authorities {
 
