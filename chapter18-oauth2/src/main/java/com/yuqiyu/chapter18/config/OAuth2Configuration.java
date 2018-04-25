@@ -2,6 +2,7 @@ package com.yuqiyu.chapter18.config;
 
 import com.yuqiyu.CustomAuthenticationEntryPoint;
 import com.yuqiyu.CustomLogoutSuccessHandler;
+import com.yuqiyu.chapter18.enums.Authorities;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 
@@ -95,7 +96,7 @@ public class OAuth2Configuration {
                     .inMemory()
                     .withClient(propertyResolver.getProperty(PROP_CLIENTID))
                     .scopes("read", "write")
-                    .authorities(com.yuqiyu.Authorities.ROLE_ADMIN.name(), com.yuqiyu.Authorities.ROLE_USER.name())
+                    .authorities(Authorities.ROLE_ADMIN.name(), Authorities.ROLE_USER.name())
                     .authorizedGrantTypes("password", "refresh_token")
                     .secret(propertyResolver.getProperty(PROP_SECRET))
                     .accessTokenValiditySeconds(propertyResolver.getProperty(PROP_TOKEN_VALIDITY_SECONDS, Integer.class, 1800));
