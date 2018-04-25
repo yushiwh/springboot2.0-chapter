@@ -1,4 +1,0 @@
-SpringSecurity是专门针对基于Spring项目的安全框架，充分利用了依赖注入和AOP来实现安全管控
-SpringSecurity框架有两个概念认证和授权，认证可以访问系统的用户，而授权则是用户可以访问的资源
-UserEntity实现了UserDetails接口，UserDetails是SpringSecurity验证框架内部提供的用户验证接口（我们下面需要用到UserEntity来完成自定义用户认证功能），我们需要实现getAuthorities方法内容，将我们定义的角色列表添加到授权的列表内。
- 

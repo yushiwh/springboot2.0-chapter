@@ -30,12 +30,7 @@ spring:
       hibernate:
         show_sql: true
         format_sql: true
-
-#访问Druid的帐号和密码
-druid:
-  loginUsername: druid
-  loginPassword: 123456
-  allow: 127.0.0.1 #白名单
-  deny: 192.168.0.99 #黑名单
-  resetEnable: false #是否重置数据
-  exclusions: "*.js,*.gif,*.jpg,*.png,*.css,*.ico,/druid/*"  #忽略路径
+  mvc:
+    view:
+      prefix: /WEB-INF/jsp/
+      suffix: .jsp
