@@ -1,0 +1,22 @@
+一、
+http://localhost:8080/jwt/token  post
+appId      c2R4bWtqX21vYmlsZTQ4QTkxMzAwMTkyQzJFMTgzODc0N0NFMzk4MTREM0ZG
+appSecret  mKk7r7IJkc+RVjvPh3M4PG6VIGUlgD7jOo3VwkHJKSOL9Qyd7BW1YInvJX/N2MKRXJA/bk3RJ52DN7nKA7dd92Qd++uq+3wSB5SY08qI/Oxp8RIyDV5Q6yaKuAxn0Gg7Efy/CtXubSzJIm9GHgXxgm0yR15aUs8cXCKALbTM4sNV2iOsTNal189XC9ScEzZ20BWlMNGBczgmLz3hFKqbOn/F8DeSZ0C9ZCfA72+JkjZrr1hwWeSxhFZG0qpmff5ZF12LshC869h+7Opzb8FcYeTiqkZrEYnqffc6zUvY053PShXL7dM8FnEFAOGI94WdJPATy6xlElbfMI/iTA+CqQ==
+
+
+获得token
+
+{
+    "flag": true,
+    "msg": "",
+    "token": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJjMlI0Yld0cVgyMXZZbWxzWlRRNFFUa3hNekF3TVRreVF6SkZNVGd6T0RjME4wTkZNems0TVRSRU0wWkciLCJpYXQiOjE1MjQ2NTQyNjYsImlzcyI6Ik9ubGluZSBZQXV0aCBCdWlsZGVyIiwiZXhwIjoxNTI0NjYxNDY2fQ.e4HrLR-TN6zC9HAZhCade31QhjbITtupVYmug31k8y4"
+}
+
+
+二、
+http://localhost:8080/api/index
+head里面加上
+X-YAuth-Token   eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJjMlI0Yld0cVgyMXZZbWxzWlRRNFFUa3hNekF3TVRreVF6SkZNVGd6T0RjME4wTkZNems0TVRSRU0wWkciLCJpYXQiOjE1MjQ2NTQyNjYsImlzcyI6Ik9ubGluZSBZQXV0aCBCdWlsZGVyIiwiZXhwIjoxNTI0NjYxNDY2fQ.e4HrLR-TN6zC9HAZhCade31QhjbITtupVYmug31k8y4
+
+
+
