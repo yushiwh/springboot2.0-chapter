@@ -1,7 +1,10 @@
-package com.yuqiyu;
+package com.yuqiyu.chapter18.config;
 
+import com.yuqiyu.CustomAuthenticationEntryPoint;
+import com.yuqiyu.CustomLogoutSuccessHandler;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+
 import org.springframework.boot.bind.RelaxedPropertyResolver;
 import org.springframework.context.EnvironmentAware;
 import org.springframework.context.annotation.Bean;
@@ -17,6 +20,7 @@ import org.springframework.security.oauth2.config.annotation.web.configuration.R
 import org.springframework.security.oauth2.config.annotation.web.configurers.AuthorizationServerEndpointsConfigurer;
 import org.springframework.security.oauth2.provider.token.TokenStore;
 import org.springframework.security.oauth2.provider.token.store.JdbcTokenStore;
+
 
 import javax.sql.DataSource;
 
@@ -89,7 +93,7 @@ public class OAuth2Configuration {
                     .inMemory()
                     .withClient(propertyResolver.getProperty(PROP_CLIENTID))
                     .scopes("read", "write")
-                    .authorities(Authorities.ROLE_ADMIN.name(), Authorities.ROLE_USER.name())
+                    .authorities(com.yuqiyu.Authorities.ROLE_ADMIN.name(), com.yuqiyu.Authorities.ROLE_USER.name())
                     .authorizedGrantTypes("password", "refresh_token")
                     .secret(propertyResolver.getProperty(PROP_SECRET))
                     .accessTokenValiditySeconds(propertyResolver.getProperty(PROP_TOKEN_VALIDITY_SECONDS, Integer.class, 1800));

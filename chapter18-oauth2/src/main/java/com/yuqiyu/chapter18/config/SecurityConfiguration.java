@@ -1,4 +1,4 @@
-package com.yuqiyu;
+package com.yuqiyu.chapter18.config;
 
 import com.yuqiyu.chapter18.HengYuUserDetailsService;
 import org.springframework.beans.factory.annotation.Autowired;
