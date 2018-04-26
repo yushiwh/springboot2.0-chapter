@@ -49,6 +49,7 @@ public class JwtTokenInterceptor implements HandlerInterceptor {
         }
 
         //其他请求获取头信息
+        //*****这里就是请求的head里面需要带上的参数key值******//
         final String authHeader = request.getHeader("X-YAuth-Token");
         try {
             //如果没有header信息

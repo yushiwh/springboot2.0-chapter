@@ -84,6 +84,7 @@ public class TokenController {
                 token.setMsg("appSecret is not effective!");
             } else {
                 //检测数据库是否存在该appId的token值
+                //*******特别注意这里的查询的方法，比较先进，是 Optional，这个是java8才出来的，用于判断是否为空******//
                 Optional op = tokenJPA.findOne(new Specification<TokenInfoEntity>() {
                     @Override
                     public Predicate toPredicate(Root<TokenInfoEntity> root, CriteriaQuery<?> criteriaQuery, CriteriaBuilder criteriaBuilder) {
