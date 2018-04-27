@@ -1,0 +1,19 @@
+#server:
+#  port: 9090
+
+#数据库
+spring:
+  application:
+    name: chapter3-SpringDataJPA #微服务唯一标识，总是放在第一行
+  datasource:
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://10.3.32.85:3306/demo?useUnicode=true&characterEncoding=utf-8&useSSL=false&failOverReadOnly=false&secondsBeforeRetryMaster=0&queriesBeforeRetryMaster=0
+    username: root
+    password: roottest
+
+
+  jpa:
+    database: MySQL
+    show-sql: true
+    hibernate:
+     naming_strategy: org.hibernate.cfg.ImprovedNamingStrategy
