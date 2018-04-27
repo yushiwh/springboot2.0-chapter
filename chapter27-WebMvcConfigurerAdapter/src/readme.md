@@ -1,0 +1,8 @@
+WebMvcConfigurerAdapter配置类其实是Spring内部的一种配置方式，采用JavaBean的形式来代替传统的xml配置文件形式进行针对框架个性化定制
+
+在@Configuration上声明式添加了Spring注入注解@Component，也就是解释了为什么我们配置了@Configuration会被自动添加到IOC容器内.
+
+WebMvcConfigurerAdapter该抽象类其实里面没有任何的方法实现，只是空实现了接口WebMvcConfigurer内的全部方法，并没有给出任何的业务逻辑处理，
+这一点设计恰到好处的让我们不必去实现那些我们不用的方法，都交由WebMvcConfigurerAdapter抽象类空实现，
+如果我们需要针对具体的某一个方法做出逻辑处理，仅仅需要在WebMvcConfigurerAdapter子类中@Override对应方法就可以了。
+ 
