@@ -20,6 +20,7 @@ public class DataSourceConfig {
     @Primary
     @ConfigurationProperties(prefix = "spring.datasource.primary")
     public DataSource primaryDataSource() {
+        //此处一定要加上druid的DruidDataSource,否则数据源就不会出现，切记
         return DataSourceBuilder.create().type(com.alibaba.druid.pool.DruidDataSource.class).build();
     }
 
@@ -28,6 +29,7 @@ public class DataSourceConfig {
     @Qualifier("secondaryDS")
     @ConfigurationProperties(prefix = "spring.datasource.secondary")
     public DataSource secondaryDataSource() {
+        //此处一定要加上druid的DruidDataSource,否则数据源就不会出现，切记
         return DataSourceBuilder.create().type(com.alibaba.druid.pool.DruidDataSource.class).build();
     }
 }
