@@ -1,0 +1,65 @@
+spring:
+  datasource:
+    primary:
+      type: com.alibaba.druid.pool.DruidDataSource
+      url: jdbc:mysql://10.3.32.85:3306/demo?useUnicode=true&characterEncoding=utf-8&useSSL=false&failOverReadOnly=false&secondsBeforeRetryMaster=0&queriesBeforeRetryMaster=0
+      username: root
+      password: roottest
+      driver-class-name: com.mysql.jdbc.Driver
+      filters: stat
+      maxActive: 20
+      initialSize: 1
+      initialize: true #指定初始化数据源，是否用data.sql来初始化，默认: true
+      maxWait: 60000
+      minIdle: 1
+      timeBetweenEvictionRunsMillis: 60000
+      minEvictableIdleTimeMillis: 300000
+      validationQuery: select 'x'
+      testWhileIdle: true
+      testOnBorrow: false
+      testOnReturn: false
+      poolPreparedStatements: true
+      maxOpenPreparedStatements: 20
+      init-method: init
+
+
+
+
+
+    secondary:
+      type: com.alibaba.druid.pool.DruidDataSource
+      url: jdbc:mysql://10.3.32.85:3306/exam?useUnicode=true&characterEncoding=utf-8&useSSL=false&failOverReadOnly=false&secondsBeforeRetryMaster=0&queriesBeforeRetryMaster=0
+      username: root
+      password: roottest
+      driver-class-name: com.mysql.jdbc.Driver
+      filters: stat
+      maxActive: 20
+      initialSize: 1
+      initialize: true #指定初始化数据源，是否用data.sql来初始化，默认: true
+      maxWait: 60000
+      minIdle: 1
+      timeBetweenEvictionRunsMillis: 60000
+      minEvictableIdleTimeMillis: 300000
+      validationQuery: select 'x'
+      testWhileIdle: true
+      testOnBorrow: false
+      testOnReturn: false
+      poolPreparedStatements: true
+      maxOpenPreparedStatements: 20
+      init-method: init
+
+
+  jpa:
+    properties:
+      hibernate:
+        show_sql: true
+        format_sql: true
+
+##访问Druid的帐号和密码
+druid:
+  loginUsername: druid
+  loginPassword: 123456
+  allow: 127.0.0.1 #白名单
+  deny: 192.168.0.99 #黑名单
+  resetEnable: false #是否重置数据
+  exclusions: "*.js,*.gif,*.jpg,*.png,*.css,*.ico,/druid/*"  #忽略路径

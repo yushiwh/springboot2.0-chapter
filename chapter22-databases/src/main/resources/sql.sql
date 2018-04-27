@@ -1,0 +1,26 @@
+CREATE TABLE `test` (
+	`id` INT(11) NOT NULL AUTO_INCREMENT,
+	`create_time` DATE NULL DEFAULT NULL,
+	PRIMARY KEY (`id`)
+)
+COLLATE='utf8_general_ci'
+ENGINE=InnoDB
+;
+
+
+
+
+CREATE TABLE `user` (
+	`username` VARCHAR(50) NOT NULL,
+	`email` VARCHAR(50) NULL DEFAULT NULL,
+	`password` VARCHAR(500) NULL DEFAULT NULL,
+	`activated` TINYINT(1) NULL DEFAULT '0',
+	`activationkey` VARCHAR(50) NULL DEFAULT NULL,
+	`resetpasswordkey` VARCHAR(50) NULL DEFAULT NULL,
+	`id` INT(11) NOT NULL AUTO_INCREMENT,
+	PRIMARY KEY (`id`)
+)
+COLLATE='utf8_general_ci'
+ENGINE=MyISAM
+AUTO_INCREMENT=7
+;
