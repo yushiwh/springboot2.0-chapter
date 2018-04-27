@@ -39,7 +39,7 @@ extends QuartzJobBean
         //获取商品编号
         Long goodId = dataMap.getLong("goodId");
 
-        logger.info("分布式节点quartz-cluster-node-first，开始处理秒杀商品：{}，关注用户推送消息.",goodId);
+        logger.info("分布式节点quartz-cluster-node-second，开始处理秒杀商品：{}，关注用户推送消息.",goodId);
 
         //.../
     }

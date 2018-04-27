@@ -2,9 +2,10 @@ spring:
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/quartz?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true
+    url: jdbc:mysql://10.3.32.85:3306/demo?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true
     username: root
-    password: 123456
+    password: roottest
+
   jpa:
     hibernate:
       ddl-auto: update #ddl-auto:设为update表示每次都不会重新建表
@@ -12,7 +13,7 @@ spring:
   application:
     name: quartz-cluster-node-first
 server:
-  port: 8081
+  port: 8082
 #####################################################################################################
 # 打印日志
 logging:

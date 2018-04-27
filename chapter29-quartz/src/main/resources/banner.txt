@@ -10,3 +10,4 @@ ${AnsiColor.BRIGHT_RED}  |-| |-| ||_|||_||| /^\ |||_|||_|| |-| |-|  邪魔退散
 ${AnsiColor.BRIGHT_RED}  |O| |O| |/^\|/^\||(   )||/^\|/^\| |O| |O|     ${AnsiColor.BRIGHT_YELLOW}永不宕机  |O| |O| |/^\|/^\||(   )||/^\|/^\| |O| |O|
 ${AnsiColor.BRIGHT_RED}  |-| |-| ||_|||_||||   ||||_|||_|| |-| |-|  永无八哥   ${AnsiColor.BRIGHT_YELLOW}  |-| |-| ||_|||_||||   ||||_|||_|| |-| |-|
 ${AnsiColor.BRIGHT_CYAN}
+

@@ -87,6 +87,7 @@ public class GoodInfoService
         //任务所属分组
         String group = GoodStockCheckTimer.class.getName();
 
+        //30秒钟检查一下，所以这个任务是不会自动回收清除的，除非是手动删除
         CronScheduleBuilder scheduleBuilder = CronScheduleBuilder.cronSchedule("0/30 * * * * ?");
         //创建任务
         JobDetail jobDetail = JobBuilder.newJob(GoodStockCheckTimer.class).withIdentity(name,group).build();
@@ -108,7 +109,7 @@ public class GoodInfoService
         //任务所属分组
         String group = GoodSecKillRemindTimer.class.getName();
         //秒杀开始时间
-        long startTime = System.currentTimeMillis() + 1000 * 5 * 60;
+        long startTime = System.currentTimeMillis() + 1000 * 2 * 60;
         JobDetail jobDetail = JobBuilder
                 .newJob(GoodSecKillRemindTimer.class)
                 .withIdentity(name,group)
