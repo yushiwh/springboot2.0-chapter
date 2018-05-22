@@ -49,6 +49,7 @@ public class RocketMQClient {
         DefaultMQProducer producer = new DefaultMQProducer(producerGroup);
         //指定NameServer地址，多个地址以 ; 隔开
         producer.setNamesrvAddr(namesrvAddr);
+        //关闭掉使用vip通道，否则出现connect to XX:10909的错误
         producer.setVipChannelEnabled(false);
 
         try {
@@ -59,7 +60,7 @@ public class RocketMQClient {
             producer.start();
 
             //创建一个消息实例，包含 topic、tag 和 消息体
-            //如下：topic 为 "TopicTest"，tag 为 "push"
+            //如下：topic 为 "YSTopicTest"，tag 为 "push"
             Message message = new Message("YSTopicTest", "push", "发送消息----zhisheng-----".getBytes(RemotingHelper.DEFAULT_CHARSET));
 
             StopWatch stop = new StopWatch();

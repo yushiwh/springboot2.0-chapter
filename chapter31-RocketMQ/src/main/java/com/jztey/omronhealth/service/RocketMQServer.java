@@ -52,6 +52,7 @@ public class RocketMQServer {
 
         //指定NameServer地址，多个地址以 ; 隔开
         consumer.setNamesrvAddr(namesrvAddr);
+        //关闭掉使用vip通道，否则出现connect to XX:10909的错误
         consumer.setVipChannelEnabled(false);
         try {
             //订阅PushTopic下Tag为push的消息
@@ -63,18 +64,20 @@ public class RocketMQServer {
             consumer.registerMessageListener((MessageListenerConcurrently) (list, context) -> {
                 try {
                     for (MessageExt messageExt : list) {
-
-                        System.out.println("messageExt: " + messageExt);//输出消息内容
+                        //输出消息内容
+                        System.out.println("messageExt: " + messageExt);
 
                         String messageBody = new String(messageExt.getBody(), RemotingHelper.DEFAULT_CHARSET);
-
-                        System.out.println("消费响应：msgId : " + messageExt.getMsgId() + ",  msgBody : " + messageBody);//输出消息内容
+                        //输出消息内容
+                        System.out.println("消费响应：msgId : " + messageExt.getMsgId() + ",  msgBody : " + messageBody);
                     }
                 } catch (Exception e) {
                     e.printStackTrace();
-                    return ConsumeConcurrentlyStatus.RECONSUME_LATER; //稍后再试
+                    //稍后再试
+                    return ConsumeConcurrentlyStatus.RECONSUME_LATER;
                 }
-                return ConsumeConcurrentlyStatus.CONSUME_SUCCESS; //消费成功
+                //消费成功
+                return ConsumeConcurrentlyStatus.CONSUME_SUCCESS;
             });
             consumer.start();
         } catch (Exception e) {
