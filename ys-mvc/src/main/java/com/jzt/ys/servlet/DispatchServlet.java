@@ -50,6 +50,7 @@ public class DispatchServlet extends HttpServlet {
     /**
      * 初始化 tomcat启动的时候，要执行的类容 创建java map autowired等操作
      */
+    @Override
     public void init(ServletConfig config) {
 
         // 扫描com.ys.controller类
@@ -172,18 +173,18 @@ public class DispatchServlet extends HttpServlet {
         // basePackage ---> com.ys
         // 扫描编译好的所有的类路径 拼接路径，并且将.变成/ 用于判断是否是文件或者文件夹，递归准备 ---> com/ys
         URL url = this.getClass().getClassLoader().getResource("/" + basePackage.replaceAll("\\.", "/"));
-        String fileStr = url.getFile();// 得到路径 --->com/ys
+        String fileStr = url.getFile();// 得到路径 --->com/jzt/ys
         File file = new File(fileStr);
-        String[] filesStr = file.list();// com/ys下面所有文件夹或者.class文件
+        String[] filesStr = file.list();// com/jzt/ys下面所有文件夹或者.class文件
         for (String path : filesStr) {
-            File filePath = new File(fileStr + path);// 得到com/ys/controller
+            File filePath = new File(fileStr + path);// 得到com/jzt/ys/controller
             // 判断是文件还是文件夹
             if (filePath.isDirectory()) {
                 // 路径
                 doScan(basePackage + "." + filePath.getName());// 递归进行循环
             } else {
                 // 文件 得到OrderService.class
-                classNames.add(basePackage + "." + filePath.getName());// 得到 com/ys/controller/OrdersService.class
+                classNames.add(basePackage + "." + filePath.getName());// 得到 com/jzt/ys/controller/OrdersService.class
 
             }
         }
@@ -199,16 +200,18 @@ public class DispatchServlet extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
         // 获取到请求的路径 jzt/query--->method
-        String uri = req.getRequestURI();// ys-mvc/jzt/query....
-        String context = req.getContextPath();// ys-mvc
+        // ys-mvc/jzt/query....
+        String uri = req.getRequestURI();
+        // ys-mvc
+        String context = req.getContextPath();
+        // /jzt/query-->key
+        String path = uri.replace(context, "");
+        /// jzt/query---》method
+        Method method = (Method) handerMap.get(path);
+        // 从beans中拿到/jzt对应的对象
+        JztMvcController instance = (JztMvcController) beans.get("/" + path.split("/")[1]);
 
-        String path = uri.replace(context, "");// /jzt/query-->key
-
-        Method method = (Method) handerMap.get(path);/// jzt/query---》method
-
-        JztMvcController instance = (JztMvcController) beans.get("/" + path.split("/")[1]);// 从beans中拿到/jzt对应的对象
-
-        Object args[] = hand(req, resp, method);
+        Object[] args = hand(req, resp, method);
         try {
             method.invoke(instance, args);
         } catch (Exception e) {
@@ -216,7 +219,9 @@ public class DispatchServlet extends HttpServlet {
         }
     }
 
-    // 转化参数方法
+    /**
+     * 转化参数方法
+     */
     private static Object[] hand(HttpServletRequest request, HttpServletResponse response, Method method) {
         // 拿到当前待执行的方法有哪些参数
         Class<?>[] paramClazzs = method.getParameterTypes();
