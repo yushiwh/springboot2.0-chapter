@@ -47,6 +47,7 @@ import org.springframework.stereotype.Component;
 //@Slf4j
 public class LoggingAspect {
 
+	//声明该方法执行之前执行，前置通知
 	@Before("execution(public int com.jztey.omronhealth.service.ArithmeticCalculator.*(int, int))")
 	public void beforeMethod(JoinPoint joinPoint){
 		String methodName = joinPoint.getSignature().getName();
@@ -55,6 +56,14 @@ public class LoggingAspect {
 		System.out.println("这是切面开始打印出来的--->The method " + methodName + " begins with " + Arrays.asList(args));
 	}
 
+	//后置通知：在目标方法执行后（无论是否发生异常），执行通知
+	//在后置通知中还不能访问目标方法的执行的结果，不是在执行方法后调用的
+	/**
+	 * 这是切面开始打印出来的--->The method add begins with [3, 5]
+	 * 这是切面结束打印出来的--->The method add ends
+	 * 和--->8
+	 *
+	 */
 	@After("execution(* com.jztey.omronhealth.service.*.*(..))")
 	public void afterMethod(JoinPoint joinPoint){
 		String methodName = joinPoint.getSignature().getName();
