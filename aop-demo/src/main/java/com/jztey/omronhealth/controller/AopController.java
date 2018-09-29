@@ -32,15 +32,18 @@ import java.util.Map;
 public class AopController {
 
     @Autowired
-    private  ArithmeticCalculator arithmeticCalculator;
+    private ArithmeticCalculator arithmeticCalculator;
 
     @RequestMapping(value = "/aop", method = RequestMethod.GET)
-    public void test() {
+    public Map test() {
 
         System.out.println("和--->" + arithmeticCalculator.add(3, 5));
 
         System.out.println("差--->" + arithmeticCalculator.sub(10, 5));
 
-
+        Map map = new HashMap();
+        map.put("和", arithmeticCalculator.add(3, 5));
+        map.put("差", arithmeticCalculator.sub(10, 5));
+        return map;
     }
 }
