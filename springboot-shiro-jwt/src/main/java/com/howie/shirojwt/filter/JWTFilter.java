@@ -19,7 +19,7 @@ import java.net.URLEncoder;
 /**
  * Created with IntelliJ IDEA
  *
- * @Author yuanhaoyue swithaoy@gmail.com
+ * @Author yushiwh
  * @Description preHandle->isAccessAllowed->isLoginAttempt->executeLogin
  * @Date 2018-04-08
  * @Time 12:36

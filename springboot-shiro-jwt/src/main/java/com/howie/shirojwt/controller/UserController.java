@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.*;
 /**
  * Created with IntelliJ IDEA
  *
- * @Author yuanhaoyue swithaoy@gmail.com
+ * @Author yushiwh
  * @Description user角色权限controller
  * @Date 2018-04-09
  * @Time 17:12

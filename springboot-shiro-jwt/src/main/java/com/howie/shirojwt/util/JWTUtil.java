@@ -12,7 +12,7 @@ import java.util.Date;
 /**
  * Created with IntelliJ IDEA
  *
- * @Author yuanhaoyue swithaoy@gmail.com
+ * @Author yushiwh
  * @Description JWT 工具类
  * @Date 2018-04-07
  * @Time 22:48

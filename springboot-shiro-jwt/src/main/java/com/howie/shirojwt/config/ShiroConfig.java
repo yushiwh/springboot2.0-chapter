@@ -20,7 +20,7 @@ import java.util.Map;
 /**
  * Created with IntelliJ IDEA
  *
- * @Author yuanhaoyue swithaoy@gmail.com
+ * @Author yushiwh
  * @Description
  * @Date 2018-04-09
  * @Time 16:56
@@ -79,7 +79,6 @@ public class ShiroConfig {
     public DefaultAdvisorAutoProxyCreator defaultAdvisorAutoProxyCreator() {
         DefaultAdvisorAutoProxyCreator defaultAdvisorAutoProxyCreator = new DefaultAdvisorAutoProxyCreator();
         // 强制使用cglib，防止重复代理和可能引起代理出错的问题
-        // https://zhuanlan.zhihu.com/p/29161098
         defaultAdvisorAutoProxyCreator.setProxyTargetClass(true);
         return defaultAdvisorAutoProxyCreator;
     }
