@@ -15,3 +15,6 @@ http://10.3.5.48:8085/governance/services  root root
 
 ----Druid
 http://127.0.0.1:9090/druid/index.html   druid   123456
+
+
+增加23中设计模式
