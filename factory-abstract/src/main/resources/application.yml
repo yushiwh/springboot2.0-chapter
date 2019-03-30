@@ -1,0 +1,8 @@
+server:
+  port: 9090
+
+#class:
+#  name: com.ys.service.SpringSkinFactory
+
+class:
+  name: com.ys.service.SummerSkinFactory
