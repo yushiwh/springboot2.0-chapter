@@ -13,7 +13,7 @@
  2.Combox-->SpringCombox、SummerCombox
  3.TextField-->SpringTextField、SummerTextField
  
- 抽象工厂-->具体工厂
+ 抽象工厂-->具体工厂   
  1.SkinFactory -->SpringSkinFactory、SummerSkinFactory
  
  可以根据配置文件进行配置
