@@ -10,6 +10,7 @@
  */
 package com.ys.controller;
 
+import com.ys.service.EagerSingleton;
 import com.ys.service.LoadBalancer;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;

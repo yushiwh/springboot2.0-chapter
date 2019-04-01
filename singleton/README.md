@@ -6,3 +6,11 @@
 1. 某个类只能有一个实例。
 2. 它必须自行创建这个实例。
 3. 它必须自行向整个系统提供这个实例。
+
+
+
+包括
+1.普通的单例模式            LoadBalancer
+2.饿汉式单例类              EagerSingleton
+3.懒汉式单例类与线程锁定     LazySingleton
+4.静态(static)内部类 ——推荐 Singleton
