@@ -11,7 +11,7 @@ http://localhost:9090/getlogger  访问
  
  
  
-
+  
   1. 主要优点
 
        工厂方法模式的主要优点如下：
