@@ -12,6 +12,7 @@ package com.ys.controller;
 
 import com.ys.service.Attachment;
 import com.ys.service.WeeklyLog;
+import com.ys.service.WeeklyLogDeep;
 import com.ys.service.WeeklyLogShallowClone;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -56,7 +57,11 @@ public class Client {
         return "调用成功";
     }
 
-
+    /**
+     * 浅克隆
+     *
+     * @return
+     */
     @GetMapping(value = "/getWeeklyLogShallowClone")
     public String getWeeklyLogShallowClone() {
         WeeklyLogShallowClone log_previous, log_new;
@@ -73,6 +78,35 @@ public class Client {
         //比较附件
         logger.info("附件是否相同？ " + (log_previous.getAttachment() == log_new.getAttachment()));
         return "浅克隆调用成功";
+    }
+
+
+    /**
+     * 深克隆
+     * 深克隆技术实现了原型对象和克隆对象的完全独立，对任意克隆对象的修改都不会给其他对象产生影响，是一种更为理想的克隆实现方式。
+     *
+     * @return
+     */
+    @GetMapping(value = "/getWeeklyLogDeep")
+    public String getWeeklyLogDeep() {
+        WeeklyLogDeep log_previous, log_new = null;
+        //创建原型对象
+        log_previous = new WeeklyLogDeep();
+        //创建附件对象
+        Attachment attachment = new Attachment();
+        //将附件添加到周报中
+        log_previous.setAttachment(attachment);
+        try {
+            //调用深克隆方法创建克隆对象  
+            log_new = log_previous.deepClone();
+        } catch (Exception e) {
+            logger.error("克隆失败！");
+        }
+        //比较周报
+        logger.info("周报是否相同？ " + (log_previous == log_new));
+        //比较附件
+        logger.info("附件是否相同？ " + (log_previous.getAttachment() == log_new.getAttachment()));
+        return "深克隆调用成功";
     }
 
 
