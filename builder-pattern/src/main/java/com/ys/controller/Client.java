@@ -48,12 +48,14 @@ public class Client {
          * 只需要修改配置文件即可
          */
         ab = (ActorBuilder) factoryUtil.getBean();
-        ActorController ac = new ActorController();
+        //   ActorController ac = new ActorController();
         Actor actor;
         /**
          * 通过指挥者创建完整的建造者对象
          */
-        actor = ac.construct(ab);
+        //  actor = ac.construct(ab);
+        //直接使用模版的方法进行处理
+        actor = ab.createActor();
         String type = actor.getType();
         logger.info(type + "的外观：");
         logger.info("性别：" + actor.getSex());

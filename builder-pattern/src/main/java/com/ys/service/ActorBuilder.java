@@ -32,8 +32,14 @@ public abstract class ActorBuilder {
 
     /**
      * 工厂方法，返回一个完整的游戏角色对象
+     * 定义了调用的次序，是一个流程的模版的方法
      */
     public Actor createActor() {
+        this.buildType();
+        this.buildSex();
+        this.buildFace();
+        this.buildCostume();
+        this.buildHairstyle();
         return actor;
     }
 }
