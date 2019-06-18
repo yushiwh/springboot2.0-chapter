@@ -2,6 +2,7 @@ package com.howie.shirojwt.controller;
 
 import com.howie.shirojwt.mapper.UserMapper;
 import com.howie.shirojwt.model.ResultMap;
+import com.howie.shirojwt.util.JWTUtil;
 import org.apache.shiro.authz.annotation.RequiresRoles;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -9,6 +10,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 
 /**
@@ -33,8 +35,11 @@ public class AdminController {
 
     @GetMapping("/getUser")
     @RequiresRoles("admin")
-    public ResultMap getUser() {
+    public ResultMap getUser(HttpServletRequest req) {
+        String token = req.getHeader("Token");
         List<String> list = userMapper.getUser();
+        System.out.println("获取的token--》" + token);
+        System.out.println("得到的登录名:" + JWTUtil.getUsername(token));
         return resultMap.success().code(200).message(list);
     }
 
