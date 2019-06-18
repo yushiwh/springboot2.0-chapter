@@ -1,6 +1,7 @@
 package com.howie.shirojwt.controller;
 
 import com.howie.shirojwt.mapper.UserMapper;
+import com.howie.shirojwt.model.JWTUser;
 import com.howie.shirojwt.model.ResultMap;
 import com.howie.shirojwt.util.JWTUtil;
 import org.apache.shiro.authz.annotation.RequiresRoles;
@@ -26,6 +27,7 @@ import java.util.List;
 public class AdminController {
     private final UserMapper userMapper;
     private final ResultMap resultMap;
+
 
     @Autowired
     public AdminController(UserMapper userMapper, ResultMap resultMap) {

@@ -5,6 +5,9 @@ import com.auth0.jwt.JWTVerifier;
 import com.auth0.jwt.algorithms.Algorithm;
 import com.auth0.jwt.exceptions.JWTDecodeException;
 import com.auth0.jwt.interfaces.DecodedJWT;
+import com.howie.shirojwt.mapper.UserMapper;
+import com.howie.shirojwt.model.JWTUser;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import java.io.UnsupportedEncodingException;
 import java.util.Date;
@@ -22,6 +25,9 @@ public class JWTUtil {
     private static final long EXPIRE_TIME = 60 * 24 * 60 * 1000;
     // 密钥
     private static final String SECRET = "SHIRO+JWT";
+
+    @Autowired
+    private UserMapper userMapper;
 
     /**
      * 生成 token, 5min后过期
@@ -45,6 +51,7 @@ public class JWTUtil {
         }
     }
 
+
     /**
      * 校验 token 是否正确
      *
@@ -67,6 +74,7 @@ public class JWTUtil {
         }
     }
 
+
     /**
      * 获得token中的信息，无需secret解密也能获得
      *
@@ -76,6 +84,22 @@ public class JWTUtil {
         try {
             DecodedJWT jwt = JWT.decode(token);
             return jwt.getClaim("username").asString();
+        } catch (JWTDecodeException e) {
+            return null;
+        }
+    }
+
+
+    /**
+     * 获得token中的信息，无需secret解密也能获得
+     *
+     * @return token中包含的用户名
+     */
+    public JWTUser getJwtUser(String token) {
+        try {
+            DecodedJWT jwt = JWT.decode(token);
+
+            return userMapper.getJwtUser(jwt.getClaim("username").asString());
         } catch (JWTDecodeException e) {
             return null;
         }

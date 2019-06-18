@@ -1,5 +1,6 @@
 package com.howie.shirojwt.mapper;
 
+import com.howie.shirojwt.model.JWTUser;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
 
@@ -15,14 +16,25 @@ import java.util.List;
  */
 @Repository
 public interface UserMapper {
+
+    /**
+     * 得到登录的用户信息
+     *
+     * @param username 用户名
+     * @return
+     */
+    JWTUser getJwtUser(String username);
+
     /**
      * 获得密码
+     *
      * @param username 用户名
      */
     String getPassword(String username);
 
     /**
      * 获得角色权限
+     *
      * @param username 用户名
      * @return user/admin
      */
