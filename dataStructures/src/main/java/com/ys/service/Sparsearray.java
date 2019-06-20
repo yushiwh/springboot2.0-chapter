@@ -10,8 +10,6 @@
  */
 package com.ys.service;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 
 /**
@@ -23,8 +21,6 @@ import org.springframework.stereotype.Component;
  */
 @Component
 public class Sparsearray {
-    private static final Logger logger = LoggerFactory.getLogger(Sparsearray.class);
-
 
     /**
      * 创建一个原始的二维数组  11*11
@@ -105,7 +101,7 @@ public class Sparsearray {
 		 */
 
         //1. 先读取稀疏数组的第一行，根据第一行的数据，创建原始的二维数组
-        int chessArr2[][] = new int[sparseArr[0][0]][sparseArr[0][1]];
+        int[][] chessArr2 = new int[sparseArr[0][0]][sparseArr[0][1]];
 
         //2. 在读取稀疏数组后几行的数据(从第二行开始)，并赋给 原始的二维数组 即可
         for (int i = 1; i < sparseArr.length; i++) {
