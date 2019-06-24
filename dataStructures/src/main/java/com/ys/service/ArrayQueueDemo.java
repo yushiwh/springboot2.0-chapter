@@ -5,6 +5,9 @@ import java.util.Scanner;
 
 /**
  * 数组模拟队列
+ * <p>
+ * 存在问题：
+ * 1、由于是指针移动，当增加满后再清空，但是数组由于指针的移动到最后面，还是无法添加新的数据。（非环形队列）
  */
 public class ArrayQueueDemo {
 
