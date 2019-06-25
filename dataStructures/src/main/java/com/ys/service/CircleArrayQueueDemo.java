@@ -100,7 +100,7 @@ class CircleArray {
         }
         //直接将数据加入
         arr[rear] = n;
-        //将 rear 后移, 这里必须考虑取模
+        //将 rear 后移, 这里必须考虑取模，此处算法极为精妙
         rear = (rear + 1) % maxSize;
     }
 
@@ -115,6 +115,7 @@ class CircleArray {
         // 1. 先把 front 对应的值保留到一个临时变量
         // 2. 将 front 后移, 考虑取模
         // 3. 将临时保存的变量返回
+        //此处算法极为精妙
         int value = arr[front];
         front = (front + 1) % maxSize;
         return value;
