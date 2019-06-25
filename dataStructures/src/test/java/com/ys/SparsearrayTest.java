@@ -10,7 +10,7 @@
  */
 package com.ys;
 
-import com.ys.service.Sparsearray;
+import com.ys.service.array.Sparsearray;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
