@@ -1,3 +1,5 @@
+
+- 注意test里面更改后需要重新的mvn install 一下
 ## 数据结构
 
 - 稀疏数组（Sparsearray）
