@@ -6,8 +6,9 @@
  * Description: 双向链表的测试
  * History:
  */
-package com.ys;
+package com.ys.list;
 
+import com.ys.Tester;
 import com.ys.service.list.doublelinklist.DoubleLinkedList;
 import com.ys.service.list.doublelinklist.HeroNode2;
 import org.junit.Test;

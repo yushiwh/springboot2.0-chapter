@@ -71,3 +71,5 @@
         HeroNode [no=5, name=center, nickname=中间]
         HeroNode [no=4, name=林冲, nickname=豹子头]
         HeroNode [no=5, name=last, nickname=队尾]
+        
+  -  约瑟夫环 CircleSingleLinkedList

@@ -6,8 +6,9 @@
  * Description: 链表的测试
  * History:
  */
-package com.ys;
+package com.ys.list;
 
+import com.ys.Tester;
 import com.ys.service.list.singlelinkedlist.HeroNode;
 import com.ys.service.list.singlelinkedlist.SingleLinkedList;
 import org.junit.Test;
