@@ -94,7 +94,7 @@ public class Sparsearray {
     /**
      * 从稀疏数组中复原成二位数组
      */
-    public void reCreateNewArraY(int[][] sparseArr) {
+    public void reCreateNewArray(int[][] sparseArr) {
     /*
 		 *  1. 先读取稀疏数组的第一行，根据第一行的数据，创建原始的二维数组，比如上面的  chessArr2 = int [11][11]
 			2. 在读取稀疏数组后几行的数据，并赋给 原始的二维数组 即可.

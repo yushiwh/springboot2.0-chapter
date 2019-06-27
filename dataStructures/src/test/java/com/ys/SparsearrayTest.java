@@ -11,6 +11,7 @@
 package com.ys;
 
 import com.ys.service.array.Sparsearray;
+import com.ys.service.list.singlelinkedlist.HeroNode;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -36,6 +37,7 @@ public class SparsearrayTest extends Tester {
         int[][] sparseArr = pparsearray.createSparseArr(oldArray);
 
         //复原成二位数组
-        pparsearray.reCreateNewArraY(sparseArr);
+        pparsearray.reCreateNewArray(sparseArr);
     }
+
 }
