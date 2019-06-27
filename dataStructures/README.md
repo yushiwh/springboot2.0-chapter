@@ -43,3 +43,29 @@
     【新浪面试题】 3、将单链表反转 4、逆序打印
   - 双向链表：doublelinklist
     - 烧脑：如何在一个双向链表的指定位置增加一个节点。插入头、尾、中间addBySite方法
+        双向链表的测试
+        HeroNode [no=1, name=宋江, nickname=及时雨]
+        HeroNode [no=2, name=卢俊义, nickname=玉麒麟]
+        HeroNode [no=3, name=吴用, nickname=智多星]
+        HeroNode [no=4, name=林冲, nickname=豹子头]
+        插入末尾后情况~~
+        HeroNode [no=1, name=宋江, nickname=及时雨]
+        HeroNode [no=2, name=卢俊义, nickname=玉麒麟]
+        HeroNode [no=3, name=吴用, nickname=智多星]
+        HeroNode [no=4, name=林冲, nickname=豹子头]
+        HeroNode [no=5, name=last, nickname=队尾]
+        插入队首后情况~~
+        HeroNode [no=5, name=first, nickname=队首]
+        HeroNode [no=1, name=宋江, nickname=及时雨]
+        HeroNode [no=2, name=卢俊义, nickname=玉麒麟]
+        HeroNode [no=3, name=吴用, nickname=智多星]
+        HeroNode [no=4, name=林冲, nickname=豹子头]
+        HeroNode [no=5, name=last, nickname=队尾]
+        指定位置后的链表情况~~
+        HeroNode [no=5, name=first, nickname=队首]
+        HeroNode [no=1, name=宋江, nickname=及时雨]
+        HeroNode [no=2, name=卢俊义, nickname=玉麒麟]
+        HeroNode [no=3, name=吴用, nickname=智多星]
+        HeroNode [no=5, name=center, nickname=中间]
+        HeroNode [no=4, name=林冲, nickname=豹子头]
+        HeroNode [no=5, name=last, nickname=队尾]
