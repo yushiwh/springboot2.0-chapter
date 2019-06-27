@@ -52,8 +52,8 @@ public class DoubleLinkListTest extends Tester {
 
         //指定位置的添加节点
         HeroNode2 hero5 = new HeroNode2(5, "last", "队尾");
-        HeroNode2 hero6 = new HeroNode2(5, "first", "队首");
-        HeroNode2 hero7 = new HeroNode2(5, "center", "中间");
+        HeroNode2 hero6 = new HeroNode2(6, "first", "队首");
+        HeroNode2 hero7 = new HeroNode2(7, "center", "中间");
         //插入末尾
         doubleLinkedList.addBySite(hero4, null, hero5);
         System.out.println("插入末尾后情况~~");
