@@ -8,7 +8,6 @@
  */
 package com.ys.service.list.josepfu;
 
-import org.springframework.stereotype.Component;
 
 /**
  * 〈单向环形链表〉
