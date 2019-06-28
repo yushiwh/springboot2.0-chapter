@@ -8,6 +8,8 @@
  */
 package com.ys.service.list.josepfu;
 
+import org.springframework.stereotype.Component;
+
 /**
  * 〈单向环形链表〉
  * <p>
@@ -22,6 +24,7 @@ package com.ys.service.list.josepfu;
  * @create 2019/6/27
  * @since 1.0.0
  */
+
 public class CircleSingleLinkedList {
     /**
      * 创建一个first节点,当前没有编号
@@ -31,7 +34,7 @@ public class CircleSingleLinkedList {
     /**
      * 添加小孩节点，构建成一个环形的链表
      *
-     * @param nums
+     * @param nums 需要添加几个小孩
      */
     public void addBoy(int nums) {
         // nums 做一个数据校验
@@ -53,8 +56,13 @@ public class CircleSingleLinkedList {
                 // 让curBoy指向第一个小孩
                 curBoy = first;
             } else {
+                //这里有点绕
+                //先让指针指向新加的节点，这个时候的指针还在第一个节点上面
+                //****这样就把原来最后指向第一个节点的环干掉了***
                 curBoy.setNext(boy);
+                //再让新节点的下一个指向第一个，构成环
                 boy.setNext(first);
+                //最后将指针指向目前节点，准备后续的
                 curBoy = boy;
             }
         }
@@ -82,9 +90,13 @@ public class CircleSingleLinkedList {
         }
     }
 
-    // 根据用户的输入，计算出小孩出圈的顺序
 
     /**
+     * 根据用户的输入，计算出小孩出圈的顺序
+     * 需要两个指针进行操作
+     * 一个指向最后一个小孩  helper
+     * 一个指向helper的下一个小孩
+     *
      * @param startNo  表示从第几个小孩开始数数
      * @param countNum 表示数几下
      * @param nums     表示最初有多少小孩在圈中
@@ -106,12 +118,13 @@ public class CircleSingleLinkedList {
             helper = helper.getNext();
         }
         //小孩报数前，先让 first 和  helper 移动 k - 1次
+        //也就是移动到从哪个小孩开始
         for (int j = 0; j < startNo - 1; j++) {
             first = first.getNext();
             helper = helper.getNext();
         }
         //当小孩报数时，让first 和 helper 指针同时 的移动  m  - 1 次, 然后出圈
-        //这里是一个循环操作，知道圈中只有一个节点
+        //这里是一个循环操作，直到圈中只有一个节点
         while (true) {
             //说明圈中只有一个节点
             if (helper == first) {
@@ -124,8 +137,9 @@ public class CircleSingleLinkedList {
             }
             //这时first指向的节点，就是要出圈的小孩节点
             System.out.printf("小孩%d出圈\n", first.getNo());
-            //这时将first指向的小孩节点出圈
+            //这时将first指向的小孩节点出圈，移动first指针
             first = first.getNext();
+            //真正的出圈，将链指向下一个。因为上一步中的first已经指向了下一个
             helper.setNext(first);
 
         }
