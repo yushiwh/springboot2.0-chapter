@@ -24,6 +24,8 @@ import java.util.Stack;
 @Component
 public class PolandNotation {
     /**
+     * 中缀表达式转换为后缀表达式
+     * <p>
      * //即 ArrayList [1,+,(,(,2,+,3,),*,4,),-,5]  =》 ArrayList [1,2,3,+,4,*,+,5,–]
      * 方法：将得到的中缀表达式对应的List => 后缀表达式对应的List
      */
