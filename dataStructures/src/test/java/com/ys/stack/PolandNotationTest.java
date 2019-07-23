@@ -43,12 +43,13 @@ public class PolandNotationTest extends Tester {
         //   即 ArrayList [1,+,(,(,2,+,3,),*,4,),-,5]  =》 ArrayList [1,2,3,+,4,*,+,5,–]
 
         String expression = "1+((2+3)*4)-5";//注意表达式
+        System.out.println("中缀表达式" + expression);
         List<String> infixExpressionList = polandNotation.toInfixExpressionList(expression);
         System.out.println("中缀表达式对应的List=" + infixExpressionList); // ArrayList [1,+,(,(,2,+,3,),*,4,),-,5]
         List<String> suffixExpreesionList = polandNotation.parseSuffixExpreesionList(infixExpressionList);
         System.out.println("后缀表达式对应的List" + suffixExpreesionList); //ArrayList [1,2,3,+,4,*,+,5,–]
 
-        System.out.printf("expression=%d", polandNotation.calculate(suffixExpreesionList)); // ?
+        System.out.printf(expression+"="+ polandNotation.calculate(suffixExpreesionList)); // ?
 
 
 
