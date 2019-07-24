@@ -94,7 +94,9 @@
        5. 将6入栈； 
        6. 最后是-运算符，计算出35-6的值，即29，由此得出最终结果 */
         
-    - 中缀表达式转换后缀表达式步骤
+    - 中缀表达式转换后缀表达式步骤PolandNotation中的parseSuffixExpreesionList方法，注意先要转换成对应的list（toInfixExpressionList方法）
+    - 完整的逆波兰表达式的计算器，支持小数点和空格符等ReversePolishMultiCalc
+     
         
         
         
