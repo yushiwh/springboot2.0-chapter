@@ -12,6 +12,7 @@ import org.springframework.stereotype.Component;
 
 /**
  * 〈迷宫的方法——递归〉
+ * 如果要找出最短路径的话，其实就是把所有的策略放到一个数组里面进行循环，都走一遍。把所有的2的个数记录下来。得到最小的个数的就是最短路径
  *
  * @author nick
  * @create 2019/7/24
