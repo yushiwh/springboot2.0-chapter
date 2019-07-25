@@ -71,19 +71,26 @@ public class MiGong {
      * 修改找路的策略，改成 上->右->下->左
      */
     public static boolean setWay2(int[][] map, int i, int j) {
-        if (map[6][5] == 2) { // 通路已经找到ok
+        // 通路已经找到ok
+        if (map[6][5] == 2) {
             return true;
         } else {
-            if (map[i][j] == 0) { //如果当前这个点还没有走过
+            //如果当前这个点还没有走过
+            if (map[i][j] == 0) {
                 //按照策略 上->右->下->左
-                map[i][j] = 2; // 假定该点是可以走通.
-                if (setWay2(map, i - 1, j)) {//向上走
+                // 假定该点是可以走通.
+                map[i][j] = 2;
+                //向上走
+                if (setWay2(map, i - 1, j)) {
                     return true;
-                } else if (setWay2(map, i, j + 1)) { //向右走
+                    //向右走
+                } else if (setWay2(map, i, j + 1)) {
                     return true;
-                } else if (setWay2(map, i + 1, j)) { //向下
+                    //向下
+                } else if (setWay2(map, i + 1, j)) {
                     return true;
-                } else if (setWay2(map, i, j - 1)) { // 向左走
+                    // 向左走
+                } else if (setWay2(map, i, j - 1)) {
                     return true;
                 } else {
                     //说明该点是走不通，是死路
