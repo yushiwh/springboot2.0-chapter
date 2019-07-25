@@ -60,7 +60,7 @@ public class MiGongTest extends Tester {
 
         //使用递归回溯给小球找路
          miGong.setWay(map, 1, 1);
-       // miGong.setWay2(map, 1, 1);
+      //  miGong.setWay2(map, 1, 1);
 
         //输出新的地图, 小球走过，并标识过的递归
         System.out.println("小球走过，并标识过的 地图的情况");

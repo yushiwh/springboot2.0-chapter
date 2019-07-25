@@ -36,7 +36,7 @@ public class MiGong {
      */
     public static boolean setWay(int[][] map, int i, int j) {
         // 通路已经找到ok
-        if (map[6][5] == 2) {
+        if (map[6][1] == 2) {
             return true;
         } else {
             //如果当前这个点还没有走过
