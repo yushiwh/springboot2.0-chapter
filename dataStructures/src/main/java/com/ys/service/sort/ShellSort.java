@@ -13,7 +13,8 @@ import org.springframework.stereotype.Component;
 /**
  * 〈希尔排序〉
  * 使用逐步推导的方式来编写希尔排序
- * // 希尔排序时， 对有序序列在插入时采用交换法,
+ * // 希尔排序时， 对有序序列在插入时采用交换法,只需要3次就可以排序。
+ * 每次都是用数组的个数和2取余。10/2=5(组)   5/2=2（组）  2/2=1（组）
  * // 思路(算法) ===> 代码
  *
  * @author nick
@@ -22,6 +23,12 @@ import org.springframework.stereotype.Component;
  */
 @Component
 public class ShellSort {
+
+    /**
+     * 交换的方法不推荐，更慢了
+     *
+     * @param arr
+     */
     public void shellSort(int[] arr) {
         int temp = 0;
         int count = 0;
@@ -96,6 +103,7 @@ public class ShellSort {
 
     /**
      * 对交换式的希尔排序进行优化->移位法
+     * 推荐，大幅度提升
      */
     public void shellSort2(int[] arr) {
         // 增量gap, 并逐步的缩小增量

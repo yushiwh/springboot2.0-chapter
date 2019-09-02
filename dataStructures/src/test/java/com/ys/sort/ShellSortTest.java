@@ -48,8 +48,8 @@ public class ShellSortTest extends Tester {
         String date1Str = simpleDateFormat.format(data1);
         System.out.println("排序前的时间是=" + date1Str);
 
-        //shellSort.shellSort(arr); //交换式
-        shellSort.shellSort2(arr);//移位方式
+        shellSort.shellSort(arr); //交换式
+       // shellSort.shellSort2(arr);//移位方式
 
         Date data2 = new Date();
         String date2Str = simpleDateFormat.format(data2);
