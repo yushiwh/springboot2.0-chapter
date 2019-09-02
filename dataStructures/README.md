@@ -104,15 +104,14 @@
 -  递归（Recursive）
         
 -  排序（8种） 
-   -  插入排序 
-        - 直接插入 InsertSort
-        - 希尔排序 ShellSort
+        - 插入排序 直接插入 InsertSort 
+        - 希尔排序 ShellSort（插入排序的升级版本，防止出现最小的在最后的情况）
    - 选择排序 
         - 简单选择排序 SelectSort
         - 堆排序
    - 交换排序 
-     -    冒泡排序 bubbleSort
-        - 快速排序
+        - 冒泡排序 bubbleSort 
+     -    快速排序 QuickSort （递归，冒泡的升级版本，空间换时间，时间很快）
    - 归并排序
    - 基数排序     
 - 算法的时间复杂度
