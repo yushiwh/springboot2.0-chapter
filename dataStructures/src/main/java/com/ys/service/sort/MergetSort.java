@@ -12,6 +12,8 @@ import org.springframework.stereotype.Component;
 
 /**
  * 〈归并排序〉
+ * 将数组进行从中间分开，不停的进行递归，分到最后每个数组不能再分为止
+ * 然后将这两个元素进行排序后合并
  *
  * @author nick
  * @create 2019/9/2
@@ -64,7 +66,9 @@ public class MergetSort {
             //然后 t++, i++
             if (arr[i] <= arr[j]) {
                 temp[t] = arr[i];
+                //t往后移动一位，为下次放进temp里面做准备
                 t += 1;
+                //左边的指向下一位
                 i += 1;
             } else { //反之,将右边有序序列的当前元素，填充到temp数组
                 temp[t] = arr[j];
@@ -92,6 +96,7 @@ public class MergetSort {
         //(三)
         //将temp数组的元素拷贝到arr
         //注意，并不是每次都拷贝所有
+        //这段是精华，烧脑。每次复制的数据不是全部，而是合并的那个数组
         t = 0;
         int tempLeft = left;
         //第一次合并 tempLeft = 0 , right = 1 //  tempLeft = 2  right = 3 // tL=0 ri=3
