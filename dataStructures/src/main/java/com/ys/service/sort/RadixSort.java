@@ -23,8 +23,9 @@ import java.util.Arrays;
 public class RadixSort {
     /**
      * 基数排序方法
+     * 目前此方法不支持负数在里面排序,带上负数将会成下标越界
      */
-    public static void radixSort(int[] arr) {
+    public static int[] radixSort(int[] arr) {
 
         //根据前面的推导过程，我们可以得到最终的基数排序代码
 
@@ -37,7 +38,7 @@ public class RadixSort {
             }
         }
         //得到最大数是几位数
-        int maxLength =  String.valueOf(max).length();
+        int maxLength = String.valueOf(max).length();
         System.out.println("最大的位数是=" + maxLength);
 
         //定义一个二维数组，表示10个桶, 每个桶就是一个一维数组
@@ -82,8 +83,10 @@ public class RadixSort {
             //System.out.println("第"+(i+1)+"轮，对个位的排序处理 arr =" + Arrays.toString(arr));
 
         }
+        //将排序好的返回出去
+        return arr;
 
-
+///////////////////////下面是一步一步的演示过程///////////////////////
 /*
 		//第1轮(针对每个元素的个位进行排序处理)
 		for(int j = 0; j < arr.length; j++) {
@@ -166,4 +169,73 @@ public class RadixSort {
 //		System.out.println("第3轮，对个位的排序处理 arr =" + Arrays.toString(arr));*/
 
     }
+
+
+    /**
+     * 基数排序方法
+     * 支持负数
+     * 方法就是先把正负数分成2个数组，然后把负数数组去绝对值排序
+     * 然后将绝对值排序的数组倒序+正数数组进行拼接成一个数组
+     */
+    public static int[] radixSortByNagetive(int[] arr) {
+
+        int[] returnarr = new int[arr.length];
+
+        //定义正负数的个数
+        int nagetive_count = 0;
+        int positive_count = 0;
+
+        for (int i : arr) {
+            if (i <= 0) {
+                nagetive_count++;
+            } else {
+                positive_count++;
+            }
+        }
+
+        //负数数组,最大全部是负数
+        int[] arr_nagetive = new int[nagetive_count];
+        //正数数组，最大全为正数
+        int[] arr_positive = new int[positive_count];
+
+        //先将数组循环，按照正负放进两个不同的数组
+        //定义下标
+        int nagetive = 0;
+        int positive = 0;
+        for (int i : arr) {
+            if (i <= 0) {
+                //负数，将绝对值放进去
+                arr_nagetive[nagetive] = Math.abs(i);
+                nagetive++;
+            } else {
+                //正数
+                arr_positive[positive] = i;
+                positive++;
+            }
+        }
+//        System.out.println("------分割后的数组------");
+//        System.out.println("负数数组" + Arrays.toString(arr_nagetive));
+//        System.out.println("正数数组 " + Arrays.toString(arr_positive));
+        //分别调用进行排序
+        //负数绝对值的返回数组
+        int[] return_arr_nagetive = radixSort(arr_nagetive);
+        //正数的返回数组
+        int[] return_arr_positive = radixSort(arr_positive);
+
+//        System.out.println("排序后负数数组=" + Arrays.toString(return_arr_nagetive));
+//        System.out.println("排序后正数组=" + Arrays.toString(return_arr_positive));
+
+        //将负数的数组先进行循环后，从大到小将入到数组里面，不过还原负号,j是数组的下标
+        for (int i = return_arr_nagetive.length - 1, j = 0; i >= 0; i--, j++) {
+            returnarr[j] = 0 - return_arr_nagetive[i];
+        }
+        //将正数拼接到后面
+        for (int i = 0, j = nagetive_count; i < positive_count; i++, j++) {
+            returnarr[j] = return_arr_positive[i];
+        }
+//        System.out.println("正数组=" + Arrays.toString(return_arr_positive));
+//        System.out.println("正数组排序后=" + Arrays.toString(returnarr));
+        return returnarr;
+    }
+
 }
