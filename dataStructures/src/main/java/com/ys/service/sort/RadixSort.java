@@ -10,6 +10,8 @@ package com.ys.service.sort;
 
 import org.springframework.stereotype.Component;
 
+import java.util.Arrays;
+
 /**
  * 基数排序
  *
@@ -35,8 +37,8 @@ public class RadixSort {
             }
         }
         //得到最大数是几位数
-        int maxLength = (max + "").length();
-
+        int maxLength =  String.valueOf(max).length();
+        System.out.println("最大的位数是=" + maxLength);
 
         //定义一个二维数组，表示10个桶, 每个桶就是一个一维数组
         //说明
@@ -52,7 +54,6 @@ public class RadixSort {
 
 
         //这里我们使用循环将代码处理
-
         for (int i = 0, n = 1; i < maxLength; i++, n *= 10) {
             //(针对每个元素的对应位进行排序处理)， 第一次是个位，第二次是十位，第三次是百位..
             for (int j = 0; j < arr.length; j++) {
@@ -82,8 +83,8 @@ public class RadixSort {
 
         }
 
-		/*
 
+/*
 		//第1轮(针对每个元素的个位进行排序处理)
 		for(int j = 0; j < arr.length; j++) {
 			//取出每个元素的个位的值
@@ -113,56 +114,56 @@ public class RadixSort {
 
 		//==========================================
 
-		//第2轮(针对每个元素的十位进行排序处理)
-		for (int j = 0; j < arr.length; j++) {
-			// 取出每个元素的十位的值
-			int digitOfElement = arr[j] / 10  % 10; //748 / 10 => 74 % 10 => 4
-			// 放入到对应的桶中
-			bucket[digitOfElement][bucketElementCounts[digitOfElement]] = arr[j];
-			bucketElementCounts[digitOfElement]++;
-		}
-		// 按照这个桶的顺序(一维数组的下标依次取出数据，放入原来数组)
-		index = 0;
-		// 遍历每一桶，并将桶中是数据，放入到原数组
-		for (int k = 0; k < bucketElementCounts.length; k++) {
-			// 如果桶中，有数据，我们才放入到原数组
-			if (bucketElementCounts[k] != 0) {
-				// 循环该桶即第k个桶(即第k个一维数组), 放入
-				for (int l = 0; l < bucketElementCounts[k]; l++) {
-					// 取出元素放入到arr
-					arr[index++] = bucket[k][l];
-				}
-			}
-			//第2轮处理后，需要将每个 bucketElementCounts[k] = 0 ！！！！
-			bucketElementCounts[k] = 0;
-		}
-		System.out.println("第2轮，对个位的排序处理 arr =" + Arrays.toString(arr));
-
-
-		//第3轮(针对每个元素的百位进行排序处理)
-		for (int j = 0; j < arr.length; j++) {
-			// 取出每个元素的百位的值
-			int digitOfElement = arr[j] / 100 % 10; // 748 / 100 => 7 % 10 = 7
-			// 放入到对应的桶中
-			bucket[digitOfElement][bucketElementCounts[digitOfElement]] = arr[j];
-			bucketElementCounts[digitOfElement]++;
-		}
-		// 按照这个桶的顺序(一维数组的下标依次取出数据，放入原来数组)
-		index = 0;
-		// 遍历每一桶，并将桶中是数据，放入到原数组
-		for (int k = 0; k < bucketElementCounts.length; k++) {
-			// 如果桶中，有数据，我们才放入到原数组
-			if (bucketElementCounts[k] != 0) {
-				// 循环该桶即第k个桶(即第k个一维数组), 放入
-				for (int l = 0; l < bucketElementCounts[k]; l++) {
-					// 取出元素放入到arr
-					arr[index++] = bucket[k][l];
-				}
-			}
-			//第3轮处理后，需要将每个 bucketElementCounts[k] = 0 ！！！！
-			bucketElementCounts[k] = 0;
-		}
-		System.out.println("第3轮，对个位的排序处理 arr =" + Arrays.toString(arr)); */
+//		//第2轮(针对每个元素的十位进行排序处理)
+//		for (int j = 0; j < arr.length; j++) {
+//			// 取出每个元素的十位的值
+//			int digitOfElement = arr[j] / 10  % 10; //748 / 10 => 74 % 10 => 4
+//			// 放入到对应的桶中
+//			bucket[digitOfElement][bucketElementCounts[digitOfElement]] = arr[j];
+//			bucketElementCounts[digitOfElement]++;
+//		}
+//		// 按照这个桶的顺序(一维数组的下标依次取出数据，放入原来数组)
+//		index = 0;
+//		// 遍历每一桶，并将桶中是数据，放入到原数组
+//		for (int k = 0; k < bucketElementCounts.length; k++) {
+//			// 如果桶中，有数据，我们才放入到原数组
+//			if (bucketElementCounts[k] != 0) {
+//				// 循环该桶即第k个桶(即第k个一维数组), 放入
+//				for (int l = 0; l < bucketElementCounts[k]; l++) {
+//					// 取出元素放入到arr
+//					arr[index++] = bucket[k][l];
+//				}
+//			}
+//			//第2轮处理后，需要将每个 bucketElementCounts[k] = 0 ！！！！
+//			bucketElementCounts[k] = 0;
+//		}
+//		System.out.println("第2轮，对个位的排序处理 arr =" + Arrays.toString(arr));
+//
+//
+//		//第3轮(针对每个元素的百位进行排序处理)
+//		for (int j = 0; j < arr.length; j++) {
+//			// 取出每个元素的百位的值
+//			int digitOfElement = arr[j] / 100 % 10; // 748 / 100 => 7 % 10 = 7
+//			// 放入到对应的桶中
+//			bucket[digitOfElement][bucketElementCounts[digitOfElement]] = arr[j];
+//			bucketElementCounts[digitOfElement]++;
+//		}
+//		// 按照这个桶的顺序(一维数组的下标依次取出数据，放入原来数组)
+//		index = 0;
+//		// 遍历每一桶，并将桶中是数据，放入到原数组
+//		for (int k = 0; k < bucketElementCounts.length; k++) {
+//			// 如果桶中，有数据，我们才放入到原数组
+//			if (bucketElementCounts[k] != 0) {
+//				// 循环该桶即第k个桶(即第k个一维数组), 放入
+//				for (int l = 0; l < bucketElementCounts[k]; l++) {
+//					// 取出元素放入到arr
+//					arr[index++] = bucket[k][l];
+//				}
+//			}
+//			//第3轮处理后，需要将每个 bucketElementCounts[k] = 0 ！！！！
+//			bucketElementCounts[k] = 0;
+//		}
+//		System.out.println("第3轮，对个位的排序处理 arr =" + Arrays.toString(arr));*/
 
     }
 }
