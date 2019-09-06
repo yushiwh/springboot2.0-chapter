@@ -43,6 +43,8 @@ public class InsertValueSearch {
         // 求出mid, 自适应，中间索引.算法很牛逼
         //*******自适应的公式，不是二分查找中的每次对半取值*********
         int mid = left + (right - left) * (findVal - arr[left]) / (arr[right] - arr[left]);
+
+
         int midVal = arr[mid];
         // 说明应该向右边递归
         if (findVal > midVal) {
