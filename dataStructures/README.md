@@ -123,8 +123,8 @@
 - 查找算法
   - 顺序（线性）查找 seqSearch
   - 二分查找/折半查找 BinarySearch
-  - 插值查找
-  - 斐波那契查找（黄金分割点）
+  - 插值查找 二分查找的升级版本 InsertValueSearch，查找中间值的算法比较牛逼
+  - 斐波那契查找（黄金分割点）  FibonacciSearch
 
 
 

@@ -15,6 +15,9 @@ import org.springframework.stereotype.Component;
  * 编写插值查找算法
  * 自适应中间值，可以有效减少查找的次数
  * //说明：插值查找算法，也要求数组是有序的
+ * <p>
+ * 比较适应：关键字分布比较均匀。
+ * 不适应：关键字分布不均匀，不一定比二分查找的快。
  *
  * @author nick
  * @create 2019/9/6
