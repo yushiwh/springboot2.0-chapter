@@ -126,7 +126,7 @@
   - 插值查找 二分查找的升级版本 InsertValueSearch，查找中间值的算法比较牛逼
   - 斐波那契查找（黄金分割点）  FibonacciSearch
 
-
+- hash算法 HashTable
 
 
 
