@@ -24,6 +24,9 @@ public class HashTab {
      * //表示有多少条链表
      */
     private int size;
+    public HashTab(){
+
+    }
 
     /**
      * //构造器
