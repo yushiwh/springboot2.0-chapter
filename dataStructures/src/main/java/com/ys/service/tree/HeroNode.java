@@ -46,20 +46,20 @@ public class HeroNode {
     /**
      * 删除非根节点的叶子节点
      * 将数的右节点进行接上去
-     *
+     * <p>
      * 如
-     *              1
-     *            /  \
-     *           2    3
-     *          / \  / \
-     *         6  7 5  4
-     *
-     *  删除3后，变成
-     *              1
-     *            /  \
-     *           2    4
-     *          / \
-     *         6  7
+     * 1
+     * /  \
+     * 2    3
+     * / \  / \
+     * 6  7 5  4
+     * <p>
+     * 删除3后，变成
+     * 1
+     * /  \
+     * 2    4
+     * / \
+     * 6  7
      *
      * @param no
      */
@@ -68,14 +68,30 @@ public class HeroNode {
         //判断左子树
         if (this.left != null && this.left.no == no) {
             //此处进行赋值
-            this.left = this.left.right;
+            //进行判断，如果右边有就把右边接上，右边没有就接左边。左边没有就职位null
+            if (null != this.left.right) {
+                this.left = this.left.right;
+            } else if (null != this.left.left) {
+                this.left = this.left.left;
+            } else {
+                this.left = null;
+            }
+
             return;
         }
         //3.如果当前结点的右子结点不为空，并且右子结点 就是要删除结点，就将this.right= null ;并且就返回(结束递归删除)
         //判断右子树
         if (this.right != null && this.right.no == no) {
             //此处进行赋值
-            this.right = this.right.right;
+
+            //进行判断，如果右边有就把右边接上，右边没有就接左边。左边没有就职位null
+            if (null != this.right.right) {
+                this.right = this.right.right;
+            } else if (null != this.right.left) {
+                this.right = this.right.left;
+            } else {
+                this.right = null;
+            }
             return;
         }
 
