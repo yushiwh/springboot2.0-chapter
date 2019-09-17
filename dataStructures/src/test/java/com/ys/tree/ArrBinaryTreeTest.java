@@ -22,7 +22,7 @@ import org.junit.Test;
 public class ArrBinaryTreeTest extends Tester {
 
     @Test
-    public void testPolandNotation() throws Exception {
+    public void testArrBinaryTree() throws Exception {
 
         int[] arr = {1, 2, 3, 4, 5, 6, 7};
         //创建一个 ArrBinaryTree
