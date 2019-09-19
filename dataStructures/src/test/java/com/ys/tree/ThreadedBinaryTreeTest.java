@@ -23,7 +23,17 @@ import org.junit.Test;
 public class ThreadedBinaryTreeTest extends Tester {
     @Test
     public void testPolandNotation() throws Exception {
+
         //测试一把中序线索二叉树的功能 以数组｛8, 3, 10, 1, 14, 6｝为例
+
+        /**
+         *          1
+         *        /   \
+         *       3     6
+         *      / \   /
+         *     8  10 14
+         */
+
         HeroNode root = new HeroNode(1, "tom");
         HeroNode node2 = new HeroNode(3, "jack");
         HeroNode node3 = new HeroNode(6, "smith");
@@ -38,20 +48,69 @@ public class ThreadedBinaryTreeTest extends Tester {
         node2.setRight(node5);
         node3.setLeft(node6);
 
-        //测试中序线索化
-        ThreadedBinaryTree threadedBinaryTree = new ThreadedBinaryTree();
-        threadedBinaryTree.setRoot(root);
-        threadedBinaryTree.threadedNodes();
+        //*************测试中序线索化***************//
+
+//        System.out.println("==========中序线索化开始=============");
+//        System.out.println("｛8, 3, 10, 1, 14, 6｝");
+//        ThreadedBinaryTree threadedBinaryTree = new ThreadedBinaryTree();
+//        threadedBinaryTree.setRoot(root);
+//        threadedBinaryTree.threadedNodes();
+//
+//        //测试: 以10号节点测试
+//        HeroNode leftNode = node5.getLeft();
+//        HeroNode rightNode = node5.getRight();
+//        System.out.println("10号结点的前驱结点是 =" + leftNode); //3
+//        System.out.println("10号结点的后继结点是=" + rightNode); //1
+//
+//        //当线索化二叉树后，能在使用原来的遍历方法
+//        //threadedBinaryTree.infixOrder();
+//        System.out.println("中序使用线索化的方式遍历 线索化二叉树");
+//        threadedBinaryTree.threadedList(); // 8, 3, 10, 1, 14, 6
+        //********************中序结束******************//
+
+
+        //******************前序*****************//
+        System.out.println("==========前序线索化开始=============");
+        System.out.println("{1,3,8,10,6,14}");
+
+        //前序：{1,3,8,10,6,14}
+        ThreadedBinaryTree threadedBinaryTreePre = new ThreadedBinaryTree();
+        threadedBinaryTreePre.setRoot(root);
+        threadedBinaryTreePre.threadedNodesPre();
 
         //测试: 以10号节点测试
-        HeroNode leftNode = node5.getLeft();
-        HeroNode rightNode = node5.getRight();
-        System.out.println("10号结点的前驱结点是 =" + leftNode); //3
-        System.out.println("10号结点的后继结点是=" + rightNode); //1
+        HeroNode leftNodePre = node4.getLeft();
+        HeroNode rightNodePre = node4.getRight();
+        System.out.println("8号结点的前驱结点是 =" + leftNodePre); //3
+        System.out.println("8号结点的后继结点是=" + rightNodePre); //10
 
-        //当线索化二叉树后，能在使用原来的遍历方法
-        //threadedBinaryTree.infixOrder();
-        System.out.println("使用线索化的方式遍历 线索化二叉树");
-        threadedBinaryTree.threadedList(); // 8, 3, 10, 1, 14, 6
+        HeroNode leftNodetenPre = node5.getLeft();
+        HeroNode rightNodetenPre = node5.getRight();
+        System.out.println("10号结点的前驱结点是 =" + leftNodetenPre); //8
+        System.out.println("10号结点的后继结点是=" + rightNodetenPre); //6
+
+
+        //******************前序结束*****************//
+
+        //******************后序*****************//
+//        System.out.println("==========后序线索化开始=============");
+//        System.out.println("{8,10,3,1,14,6}");
+//        //后序：{8,10,3,1,14,6}
+//        ThreadedBinaryTree threadedBinaryTreeAfter = new ThreadedBinaryTree();
+//        threadedBinaryTreeAfter.setRoot(root);
+//        threadedBinaryTreeAfter.threadedNodesAfter();
+//
+//
+//        HeroNode leftNodeAfter = node4.getLeft();
+//        HeroNode rightNodeAfter = node4.getRight();
+//        System.out.println("8号结点的前驱结点是 =" + leftNodeAfter); //null
+//        System.out.println("8号结点的后继结点是=" + rightNodeAfter); //10
+//
+//        HeroNode leftNodetenAfter = node5.getLeft();
+//        HeroNode rightNodetenAfter = node5.getRight();
+//        System.out.println("10号结点的前驱结点是 =" + leftNodetenAfter); //8
+//        System.out.println("10号结点的后继结点是=" + rightNodetenAfter); //3
+
+
     }
 }

@@ -25,6 +25,15 @@ public class ArrBinaryTreeTest extends Tester {
     public void testArrBinaryTree() throws Exception {
 
         int[] arr = {1, 2, 3, 4, 5, 6, 7};
+
+        /**
+         *             1
+         *           /   \
+         *          2     3
+         *        /   \  /  \
+         *       4    5 6    7
+         */
+
         //创建一个 ArrBinaryTree
         ArrBinaryTree arrBinaryTree = new ArrBinaryTree(arr);
         System.out.println("~~~前序遍历~~~");

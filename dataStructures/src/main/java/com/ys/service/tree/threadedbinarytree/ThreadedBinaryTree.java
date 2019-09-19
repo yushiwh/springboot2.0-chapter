@@ -36,8 +36,24 @@ public class ThreadedBinaryTree {
         this.threadedNodes(root);
     }
 
+
     /**
-     * 遍历线索化二叉树的方法
+     * 重载一把threadedNodesPre方法
+     */
+    public void threadedNodesPre() {
+        this.threadedNodesPre(root);
+    }
+
+    /**
+     * 重载一把threadedNodesAfter方法
+     */
+    public void threadedNodesAfter() {
+        this.threadedNodesAfter(root);
+    }
+
+
+    /**
+     * 中序遍历线索化二叉树的方法
      */
 
     public void threadedList() {
@@ -65,16 +81,18 @@ public class ThreadedBinaryTree {
         }
     }
 
+
     //
 
     /**
      * 编写对二叉树进行中序线索化的方法
      * 以数组｛8, 3, 10, 1, 14, 6｝为例
-     *        1
-     *     /   \
-     *    3     6
-     *   / \   /
-     *  8  10 14
+     * 1
+     * /   \
+     * 3     6
+     * / \   /
+     * 8  10 14
+     *
      * @param node 就是当前需要线索化的结点
      */
     public void threadedNodes(HeroNode node) {
@@ -105,76 +123,93 @@ public class ThreadedBinaryTree {
         pre = node;
         //(三)在线索化右子树
         threadedNodes(node.getRight());
-
-
     }
 
-    //删除结点
-    public void delNode(int no) {
-        if (root != null) {
-            //如果只有一个root结点, 这里立即判断root是不是就是要删除结点
-            if (root.getNo() == no) {
-                root = null;
-            } else {
-                //递归删除
-                root.delNode(no);
-            }
-        } else {
-            System.out.println("空树，不能删除~");
+
+    /**
+     * 编写对二叉树进行前序线索化的方法
+     * 以数组｛{1,3,8,10,6,14}为例
+     * 1
+     * /   \
+     * 3     6
+     * / \   /
+     * 8  10 14
+     *
+     * @param node 就是当前需要线索化的结点
+     */
+    public void threadedNodesPre(HeroNode node) {
+        //如果node==null, 不能线索化
+        if (node == null) {
+            return;
         }
+        //左指针为空,将左指针指向前驱节点
+        //8结点的.left = 上一个节点 , 8结点的.leftType = 1
+        if (node.getLeft() == null) {
+            //让当前结点的左指针指向前驱结点
+            node.setLeft(pre);
+            //修改当前结点的左指针的类型,指向前驱结点
+            node.setLeftType(1);
+        }
+        //处理后继结点,是下一次进行处理，有点不好理解
+        if (pre != null && pre.getRight() == null) {
+            //让前驱结点的右指针指向当前结点
+            pre.setRight(node);
+            //修改前驱结点的右指针类型
+            pre.setRightType(1);
+        }
+        //!!! 每处理一个结点后，让当前结点是下一个结点的前驱结点
+        pre = node;
+        //(一)先线索化左子树
+        if (node.getLeftType() != 1) {
+            threadedNodesPre(node.getLeft());
+        }
+        //(三)再线索化右子树
+        if (node.getRightType() != 1) {
+            threadedNodesPre(node.getRight());
+        }
+
     }
 
-    //前序遍历
-    public void preOrder() {
-        if (this.root != null) {
-            this.root.preOrder();
-        } else {
-            System.out.println("二叉树为空，无法遍历");
+
+    /**
+     * 后序线索化
+     *
+     * @param node
+     */
+    public void threadedNodesAfter(HeroNode node) {
+        //如果node==null, 不能线索化
+        if (node == null) {
+            return;
         }
+
+        //(一)先线索化左子树
+        if (node.getLeftType() != 1) {
+            threadedNodesAfter(node.getLeft());
+        }
+        //(三)再线索化右子树
+        if (node.getRightType() != 1) {
+            threadedNodesAfter(node.getRight());
+        }
+
+        //左指针为空,将左指针指向前驱节点
+        //8结点的.left = 上一个节点 , 8结点的.leftType = 1
+        if (node.getLeft() == null) {
+            //让当前结点的左指针指向前驱结点
+            node.setLeft(pre);
+            //修改当前结点的左指针的类型,指向前驱结点
+            node.setLeftType(1);
+        }
+        //处理后继结点,是下一次进行处理，有点不好理解
+        if (pre != null && pre.getRight() == null) {
+            //让前驱结点的右指针指向当前结点
+            pre.setRight(node);
+            //修改前驱结点的右指针类型
+            pre.setRightType(1);
+        }
+        //!!! 每处理一个结点后，让当前结点是下一个结点的前驱结点
+        pre = node;
+
+
     }
 
-    //中序遍历
-    public void infixOrder() {
-        if (this.root != null) {
-            this.root.infixOrder();
-        } else {
-            System.out.println("二叉树为空，无法遍历");
-        }
-    }
-
-    //后序遍历
-    public void postOrder() {
-        if (this.root != null) {
-            this.root.postOrder();
-        } else {
-            System.out.println("二叉树为空，无法遍历");
-        }
-    }
-
-    //前序遍历
-    public HeroNode preOrderSearch(int no) {
-        if (root != null) {
-            return root.preOrderSearch(no);
-        } else {
-            return null;
-        }
-    }
-
-    //中序遍历
-    public HeroNode infixOrderSearch(int no) {
-        if (root != null) {
-            return root.infixOrderSearch(no);
-        } else {
-            return null;
-        }
-    }
-
-    //后序遍历
-    public HeroNode postOrderSearch(int no) {
-        if (root != null) {
-            return this.root.postOrderSearch(no);
-        } else {
-            return null;
-        }
-    }
 }
