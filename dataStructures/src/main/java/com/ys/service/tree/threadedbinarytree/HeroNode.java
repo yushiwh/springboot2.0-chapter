@@ -31,6 +31,11 @@ public class HeroNode {
     private HeroNode right;
 
     /**
+     * //父节点的指针（为了后序线索化使用）
+     */
+    private HeroNode parent;
+
+    /**
      * //说明
      * //1. 如果leftType == 0 表示指向的是左子树, 如果 1 则表示指向前驱结点
      * //2. 如果rightType == 0 表示指向是右子树, 如果 1表示指向后继结点

@@ -10,7 +10,11 @@ package com.ys.service.tree.threadedbinarytree;
 
 /**
  * 〈线索化二叉树〉
- * 以数组｛8, 3, 10, 1, 14, 6｝为例
+ * 1
+ * /   \
+ * 3     6
+ * / \   /
+ * 8  10 14
  *
  * @author nick
  * @create 2019/9/17
@@ -52,8 +56,11 @@ public class ThreadedBinaryTree {
     }
 
 
+    /***********************遍历线索化二叉树开始**********************/
+
     /**
      * 中序遍历线索化二叉树的方法
+     * <p>
      */
 
     public void threadedList() {
@@ -82,11 +89,87 @@ public class ThreadedBinaryTree {
     }
 
 
-    //
+    /**
+     * 前序线索化二叉树遍历方法
+     * 1
+     * /   \
+     * 3     6
+     * / \   /
+     * 8  10 14
+     * <p>
+     * {1,3,8,10,6,14}
+     */
+    public void threadedListPre() {
+        //定义一个变量，存储当前遍历的结点，从root开始
+        HeroNode node = root;
+        while ( node != null ) {
+            while ( node.getLeftType() == 0 ) {
+                //如果是叶子节点，非前驱节点，打印当前这个结点
+                System.out.print(node + ",");
+                node = node.getLeft();
+            }
+            System.out.print(node + ",");
+            //替换这个遍历的结点
+            node = node.getRight();
+        }
+    }
 
     /**
-     * 编写对二叉树进行中序线索化的方法
-     * 以数组｛8, 3, 10, 1, 14, 6｝为例
+     * 后序线索化二叉树遍历方法
+     * <p>
+     * 注意后序有点复杂，需要建立二叉树的时候，将节点的parent进行赋值，否则不能遍历成功
+     * 1
+     * /   \
+     * 3     6
+     * / \   /
+     * 8  10 14
+     * <p>
+     * {8,10,3,1,14,6}
+     * 1. 如果leftType == 0 表示指向的是左子树, 如果 1 则表示指向前驱结点
+     * 2. 如果rightType == 0 表示指向是右子树, 如果 1表示指向后继结点
+     */
+    public void threadedListAfter() {
+        //1、找后序遍历方式开始的节点
+        HeroNode node = root;
+        while ( node != null && node.getLeftType() == 0 ) {
+            node = node.getLeft();
+        }
+        while ( node != null ) {
+            //右节点是线索
+            if (node.getRightType() == 1) {
+                System.out.print(node + ", ");
+                pre = node;
+                node = node.getRight();
+            } else {
+                //如果上个处理的节点是当前节点的右节点
+                if (node.getRight() == pre) {
+                    System.out.print(node + ", ");
+                    if (node == root) {
+                        return;
+                    }
+                    pre = node;
+                    node = node.getParent();
+                } else {    //如果从左节点的进入则找到有子树的最左节点
+                    node = node.getRight();
+                    while ( node != null && node.getLeftType() == 0 ) {
+                        node = node.getLeft();
+                    }
+                }
+            }
+        }
+
+
+    }
+
+
+    /***********************遍历线索化二叉树结束**********************/
+
+
+    /****************线索化二叉树开始********************************/
+
+    /**
+     * 中序线索化
+     * 得到的数组｛8, 3, 10, 1, 14, 6｝
      * 1
      * /   \
      * 3     6
@@ -106,7 +189,7 @@ public class ThreadedBinaryTree {
         //处理当前结点的前驱结点
         //以8结点来理解
         //8结点的.left = null , 8结点的.leftType = 1
-        if (node.getLeft() == null) {
+        if (null == node.getLeft()) {
             //让当前结点的左指针指向前驱结点
             node.setLeft(pre);
             //修改当前结点的左指针的类型,指向前驱结点
@@ -127,8 +210,8 @@ public class ThreadedBinaryTree {
 
 
     /**
-     * 编写对二叉树进行前序线索化的方法
-     * 以数组｛{1,3,8,10,6,14}为例
+     * 前序线索化
+     * 变成数组后{1,3,8,10,6,14}
      * 1
      * /   \
      * 3     6
@@ -173,6 +256,7 @@ public class ThreadedBinaryTree {
 
     /**
      * 后序线索化
+     * 变成数组后{8,10,3,1,14,6}
      *
      * @param node
      */
@@ -183,13 +267,10 @@ public class ThreadedBinaryTree {
         }
 
         //(一)先线索化左子树
-        if (node.getLeftType() != 1) {
-            threadedNodesAfter(node.getLeft());
-        }
+        threadedNodesAfter(node.getLeft());
         //(三)再线索化右子树
-        if (node.getRightType() != 1) {
-            threadedNodesAfter(node.getRight());
-        }
+        threadedNodesAfter(node.getRight());
+
 
         //左指针为空,将左指针指向前驱节点
         //8结点的.left = 上一个节点 , 8结点的.leftType = 1
@@ -208,8 +289,8 @@ public class ThreadedBinaryTree {
         }
         //!!! 每处理一个结点后，让当前结点是下一个结点的前驱结点
         pre = node;
-
-
     }
+
+    /*********************线索化结束*********************************/
 
 }
