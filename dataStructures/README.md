@@ -255,4 +255,4 @@ j，交换a[i]和a[j],重复上面的过程，直到i > j。
      
   ### 常用排序算法 
   - 见1.jpg  
-    ![](1.jpg)
+    ![](https://github.com/yushiwh/springboot2.0-chapter/blob/master/dataStructures/1.jpg)
