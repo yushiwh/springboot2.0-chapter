@@ -64,17 +64,17 @@ public class HeapSort {
      *
      * @param arr    待调整的数组
      * @param i      表示非叶子结点在数组中索引
-     * @param lenght 表示对多少个元素继续调整， length 是在逐渐的减少
+     * @param length 表示对多少个元素继续调整， length 是在逐渐的减少
      */
-    public static void adjustHeap(int[] arr, int i, int lenght) {
+    public static void adjustHeap(int[] arr, int i, int length) {
         //先取出当前元素的值，保存在临时变量
         int temp = arr[i];
         //开始调整
         //说明
-        //1. k = i * 2 + 1 k 是 i结点的左子结点
-        for (int k = i * 2 + 1; k < lenght; k = k * 2 + 1) {
+        //1. k = i * 2 + 1   k 是 i结点的左子结点
+        for (int k = i * 2 + 1; k < length; k = k * 2 + 1) {
             //说明左子结点的值小于右子结点的值
-            if (k + 1 < lenght && arr[k] < arr[k + 1]) {
+            if (k + 1 < length && arr[k] < arr[k + 1]) {
                 // k 指向右子结点
                 k++;
             }
