@@ -26,7 +26,7 @@ public class Node implements Comparable<Node> {
 
     int value;
     /**
-     * //字符
+     * //字符，为了霍夫曼编码使用。字符放在c这里，出现的次数就是结点权值
      */
     char c;
     /**
