@@ -16,7 +16,7 @@ import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
 /**
- * 〈测试顺序存储二叉树的遍历〉
+ * 霍夫曼树测试
  *
  * @author nick
  * @create 2019/9/17
