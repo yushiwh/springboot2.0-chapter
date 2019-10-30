@@ -19,7 +19,7 @@ package com.ys.service.huffmancode;
 
 public class Node implements Comparable<Node> {
     /**
-     * // 存放数据(字符)本身，比如'a' => 97 ' ' => 32
+     * // 存放数据(字符)本身，比如'a' => 97    ' ' => 32
      */
     Byte data;
     /**

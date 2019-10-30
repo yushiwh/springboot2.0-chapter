@@ -22,6 +22,23 @@ import java.util.*;
  */
 @Component
 public class HuffmanCode {
+    /**
+     * 使用一个方法，将前面的方法封装起来，便于我们的调用.
+     *
+     * @param bytes 原始的字符串对应的字节数组
+     * @return 是经过 赫夫曼编码处理后的字节数组(压缩后的数组)
+     */
+    public byte[] huffmanZip(byte[] bytes) {
+        //1.根据传入的字节数组，统计出现的字符的次数，并且进行权值赋值，得到结点数组
+        List<Node> nodes = getNodes(bytes);
+        //2.根据 nodes 创建的赫夫曼树
+        Node huffmanTreeRoot = createHuffmanTree(nodes);
+        //3.对应的赫夫曼编码(根据 赫夫曼树)
+        Map<Byte, String> huffmanCodes = getCodes(huffmanTreeRoot);
+        //4.根据生成的赫夫曼编码，压缩得到压缩后的赫夫曼编码字节数组
+        byte[] huffmanCodeBytes = zip(bytes, huffmanCodes);
+        return huffmanCodeBytes;
+    }
 
 
     /**
@@ -78,7 +95,6 @@ public class HuffmanCode {
      * @param dstFile 我们压缩后将压缩文件放到哪个目录
      */
     public void zipFile(String srcFile, String dstFile) {
-
         //创建输出流
         OutputStream os = null;
         ObjectOutputStream oos = null;
@@ -103,8 +119,6 @@ public class HuffmanCode {
             //这里我们以对象流的方式写入 赫夫曼编码，是为了以后我们恢复源文件时使用
             //注意一定要把赫夫曼编码 写入压缩文件
             oos.writeObject(huffmanCodes);
-
-
         } catch (Exception e) {
             // TODO: handle exception
             System.out.println(e.getMessage());
@@ -118,7 +132,6 @@ public class HuffmanCode {
                 System.out.println(e.getMessage());
             }
         }
-
     }
 
     //完成数据的解压
@@ -148,6 +161,7 @@ public class HuffmanCode {
         }
         //把字符串安装指定的赫夫曼编码进行解码
         //把赫夫曼编码表进行调换，因为反向查询 a->100 100->a
+        //得到反向的霍夫曼编码表
         Map<String, Byte> map = new HashMap<>(16);
         for (Map.Entry<Byte, String> entry : huffmanCodes.entrySet()) {
             map.put(entry.getValue(), entry.getKey());
@@ -157,7 +171,7 @@ public class HuffmanCode {
         List<Byte> list = new ArrayList<>();
         //i 可以理解成就是索引,扫描 stringBuilder
         for (int i = 0; i < stringBuilder.length(); ) {
-            // 小的计数器
+            // 小的计数器，重新定义了count，count相当于分针
             int count = 1;
             boolean flag = true;
             Byte b = null;
@@ -166,6 +180,7 @@ public class HuffmanCode {
                 //1010100010111...
                 //递增的取出 key 1
                 //i 不动，让count移动，指定匹配到一个字符
+                //这里比较的巧妙的根据二进制，从霍夫反向曼编码表得到对应的匹配的字符，
                 String key = stringBuilder.substring(i, i + count);
                 b = map.get(key);
                 //说明没有匹配到
@@ -177,7 +192,7 @@ public class HuffmanCode {
                 }
             }
             list.add(b);
-            //i 直接移动到 count
+            //i 直接移动到 count，直接进行跳到后面
             i += count;
         }
         //当for循环结束后，我们list中就存放了所有的字符  "i like like like java do you like a java"
@@ -217,25 +232,9 @@ public class HuffmanCode {
 
 
     /**
-     * 使用一个方法，将前面的方法封装起来，便于我们的调用.
-     *
-     * @param bytes 原始的字符串对应的字节数组
-     * @return 是经过 赫夫曼编码处理后的字节数组(压缩后的数组)
-     */
-    private byte[] huffmanZip(byte[] bytes) {
-        List<Node> nodes = getNodes(bytes);
-        //根据 nodes 创建的赫夫曼树
-        Node huffmanTreeRoot = createHuffmanTree(nodes);
-        //对应的赫夫曼编码(根据 赫夫曼树)
-        Map<Byte, String> huffmanCodes = getCodes(huffmanTreeRoot);
-        //根据生成的赫夫曼编码，压缩得到压缩后的赫夫曼编码字节数组
-        byte[] huffmanCodeBytes = zip(bytes, huffmanCodes);
-        return huffmanCodeBytes;
-    }
-
-
-    /**
      * 编写一个方法，将字符串对应的byte[] 数组，通过生成的赫夫曼编码表，返回一个赫夫曼编码 压缩后的byte[]
+     * <p>
+     * 树向左边为0 ，右边为1
      *
      * @param bytes        这时原始的字符串对应的 byte[]
      * @param huffmanCodes 生成的赫夫曼编码map
@@ -289,6 +288,8 @@ public class HuffmanCode {
     }
 
 
+    //////第二步：生成霍夫曼编码///////////////
+
     /**
      * //生成赫夫曼树对应的赫夫曼编码
      * 思路:
@@ -297,7 +298,7 @@ public class HuffmanCode {
      * 107=1111,
      * 108=000, 111=0011}
      * <p>
-     * 2. 在生成赫夫曼编码表示，需要去拼接路径, 定义一个StringBuilder 存储某个叶子结点的路径
+     * 2. 在生成赫夫曼编码表时，需要去拼接路径, 定义一个StringBuilder 存储某个叶子结点的路径
      */
     private static Map<Byte, String> huffmanCodes = new HashMap<>();
 
@@ -346,6 +347,9 @@ public class HuffmanCode {
         }
     }
 
+    /////第二步：生成霍夫曼编码结束//////////////////////
+
+
     /**
      * 前序遍历的方法
      */
@@ -357,11 +361,14 @@ public class HuffmanCode {
         }
     }
 
+
+    /////////////////第一步：根据传入的list生成霍夫曼树，并且将权值赋值到结点////////////////////////////////
+
     /**
      * @param bytes 接收字节数组
      * @return 返回的就是 List 形式   [Node[date=97 ,weight = 5], Node[]date=32,weight = 9]......],
      */
-    private List<Node> getNodes(byte[] bytes) {
+    public List<Node> getNodes(byte[] bytes) {
 
         //1创建一个ArrayList
         ArrayList<Node> nodes = new ArrayList<>();
@@ -387,10 +394,11 @@ public class HuffmanCode {
 
     }
 
+
     /**
      * 可以通过List 创建对应的赫夫曼树
      */
-    private Node createHuffmanTree(List<Node> nodes) {
+    public Node createHuffmanTree(List<Node> nodes) {
         while ( nodes.size() > 1 ) {
             //排序, 从小到大
             Collections.sort(nodes);
@@ -414,5 +422,7 @@ public class HuffmanCode {
         return nodes.get(0);
 
     }
+
+    ////////////////第一步完成///////////////////////
 
 }
