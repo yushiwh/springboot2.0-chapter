@@ -1,0 +1,1199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="GROUP_BY_SEVERITY" value="true" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8f6b5ca5-d323-4f50-9553-89afaa7e1363" name="Default" comment="增加霍夫曼编码">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/oauth2_war.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/oauth2_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__cn_hutool_hutool_all_4_5_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson_1_2_47.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_3_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_9_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_9_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_9_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_9_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_9_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_9_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_9_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_9_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_9_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_parameter_names_2_9_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_parameter_names_2_9_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_virtuald_curvesapi_1_05.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_findbugs_jsr305_1_3_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_errorprone_error_prone_annotations_2_0_18.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_23_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_j2objc_j2objc_annotations_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_jayway_jsonpath_json_path_2_4_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_vaadin_external_google_android_json_0_0_20131108_vaadin1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_11.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_annotation_javax_annotation_api_1_3_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_validation_validation_api_2_0_1_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_7_10.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_7_11.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_7_10.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_7_11.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_accessors_smart_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_json_smart_2_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_sf_ehcache_ehcache_2_10_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_collections4_4_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_compress_1_18.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_math3_3_6_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_pool2_2_5_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_10_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_10_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_4_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_ooxml_4_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_ooxml_schemas_4_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_8_5_28.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_8_5_32.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_8_5_28.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_8_5_32.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_8_5_28.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_8_5_32.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_xmlbeans_xmlbeans_3_0_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_8_13.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_assertj_assertj_core_3_9_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_mojo_animal_sniffer_annotations_1_14.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_library_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_validator_hibernate_validator_6_0_11_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_validator_hibernate_validator_6_0_7_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_validator_hibernate_validator_annotation_processor_6_0_7_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_3_2_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_core_2_15_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mongodb_bson_3_6_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mongodb_mongodb_driver_3_6_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mongodb_mongodb_driver_core_3_6_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_objenesis_objenesis_2_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_5_0_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_18_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_skyscreamer_jsonassert_1_5_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_25.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_25.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_0_0_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_0_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_0_0_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_0_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_0_0_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_0_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_aop_2_0_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_cache_2_0_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_mongodb_2_0_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_redis_2_0_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_2_0_0_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_2_0_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_0_0_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_0_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_2_0_0_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_2_0_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_2_0_0_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_2_0_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_0_0_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_0_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_2_0_0_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_2_0_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_2_0_0_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_2_0_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_commons_2_0_9_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_keyvalue_2_0_9_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_mongodb_2_0_9_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_redis_2_0_9_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_0_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_0_8_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_0_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_0_8_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_0_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_0_8_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_support_5_0_8_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_0_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_0_8_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_0_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_0_8_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_0_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_0_8_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_oxm_5_0_8_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_5_0_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_5_0_8_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_5_0_8_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_5_0_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_5_0_8_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_5_0_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_5_0_8_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_xmlunit_xmlunit_core_2_5_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_19.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__redis_clients_jedis_2_9_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/markdown-navigator.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/markdown-navigator/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/springboot2.0-chapter-demo.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/adapter-pattern/adapter-pattern.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/adapter-pattern/target/classes/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/adapter-pattern/target/classes/banner.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bridge-pattern/bridge-pattern.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bridge-pattern/target/classes/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bridge-pattern/target/classes/banner.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/builder-pattern/builder-pattern.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/builder-pattern/target/classes/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/builder-pattern/target/classes/banner.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter18-oauth2/oauth2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter18-oauth2/target/classes/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter18-oauth2/target/classes/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter18-oauth2/target/classes/oauth2.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter18-oauth2/target/classes/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/composite-pattern/composite-pattern.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/composite-pattern/target/classes/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/composite-pattern/target/classes/banner.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataStructures/dataStructures.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataStructures/src/main/java/com/ys/service/binarysorttree/BinarySortTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataStructures/src/main/java/com/ys/service/binarysorttree/Node.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataStructures/src/test/java/com/ys/binarysorttree/BinarySortTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataStructures/target/classes/META-INF/dataStructures.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataStructures/target/classes/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataStructures/target/classes/banner.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataStructures/target/classes/com/ys/Application$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataStructures/target/classes/com/ys/Application.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataStructures/target/classes/com/ys/service/array/Sparsearray.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataStructures/target/classes/com/ys/service/hash/Emp.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataStructures/target/classes/com/ys/service/hash/EmpLinkedList.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataStructures/target/classes/com/ys/service/hash/HashTab.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataStructures/target/classes/com/ys/service/huffmancode/HuffmanCode.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataStructures/target/classes/com/ys/service/huffmancode/Node.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataStructures/target/classes/com/ys/service/huffmantree/Huffmantree.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataStructures/target/classes/com/ys/service/huffmantree/Node.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataStructures/target/classes/com/ys/service/list/doublelinklist/DoubleLinkedList.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataStructures/target/classes/com/ys/service/list/doublelinklist/HeroNode2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataStructures/target/classes/com/ys/service/list/josepfu/Boy.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataStructures/target/classes/com/ys/service/list/josepfu/CircleSingleLinkedList.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataStructures/target/classes/com/ys/service/list/singlelinkedlist/HeroNode.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataStructures/target/classes/com/ys/service/list/singlelinkedlist/SingleLinkedList.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataStructures/target/classes/com/ys/service/queue/ArrayQueue.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataStructures/target/classes/com/ys/service/queue/ArrayQueueDemo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataStructures/target/classes/com/ys/service/queue/CircleArray.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataStructures/target/classes/com/ys/service/queue/CircleArrayQueueDemo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataStructures/target/classes/com/ys/service/recursive/MiGong.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataStructures/target/classes/com/ys/service/recursive/QueueEight.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataStructures/target/classes/com/ys/service/search/BinarySearch.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataStructures/target/classes/com/ys/service/search/FibonacciSearch.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataStructures/target/classes/com/ys/service/search/InsertValueSearch.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataStructures/target/classes/com/ys/service/search/SeqSearch.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataStructures/target/classes/com/ys/service/sort/BarrelSort.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataStructures/target/classes/com/ys/service/sort/BubbleSort.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataStructures/target/classes/com/ys/service/sort/InsertSort.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataStructures/target/classes/com/ys/service/sort/MergetSort.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataStructures/target/classes/com/ys/service/sort/QuickSort.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataStructures/target/classes/com/ys/service/sort/RadixSort.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataStructures/target/classes/com/ys/service/sort/SelectSort.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataStructures/target/classes/com/ys/service/sort/ShellSort.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataStructures/target/classes/com/ys/service/stack/ArrayStack2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataStructures/target/classes/com/ys/service/stack/Operation.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataStructures/target/classes/com/ys/service/stack/PolandNotation.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataStructures/target/classes/com/ys/service/stack/ReversePolishMultiCalc.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataStructures/target/classes/com/ys/service/tree/ArrBinaryTree.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataStructures/target/classes/com/ys/service/tree/BinaryTree.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataStructures/target/classes/com/ys/service/tree/HeapSort.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataStructures/target/classes/com/ys/service/tree/HeroNode.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataStructures/target/classes/com/ys/service/tree/threadedbinarytree/HeroNode.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataStructures/target/classes/com/ys/service/tree/threadedbinarytree/ThreadedBinaryTree.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataStructures/target/dataStructures-0.0.1-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataStructures/target/dataStructures-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataStructures/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataStructures/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataStructures/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataStructures/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataStructures/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataStructures/target/surefire-reports/2019-07-25T10-31-36_120-jvmRun1.dump" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataStructures/target/surefire-reports/TEST-com.ys.SpringbootRedisApplicationTests.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataStructures/target/surefire-reports/TEST-com.ys.array.SparsearrayTest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataStructures/target/surefire-reports/TEST-com.ys.list.DoubleLinkListTest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataStructures/target/surefire-reports/TEST-com.ys.list.ListTest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataStructures/target/surefire-reports/TEST-com.ys.list.josepfuTest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataStructures/target/surefire-reports/TEST-com.ys.recursive.MiGongTest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataStructures/target/surefire-reports/TEST-com.ys.recursive.QueueEightTest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataStructures/target/surefire-reports/TEST-com.ys.recursive.RecursionTest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataStructures/target/surefire-reports/TEST-com.ys.stack.PolandNotationTest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataStructures/target/surefire-reports/TEST-com.ys.stack.StackTest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataStructures/target/surefire-reports/com.ys.SpringbootRedisApplicationTests.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataStructures/target/surefire-reports/com.ys.array.SparsearrayTest.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataStructures/target/surefire-reports/com.ys.list.DoubleLinkListTest.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataStructures/target/surefire-reports/com.ys.list.ListTest.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataStructures/target/surefire-reports/com.ys.list.josepfuTest.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataStructures/target/surefire-reports/com.ys.recursive.MiGongTest.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataStructures/target/surefire-reports/com.ys.recursive.QueueEightTest.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataStructures/target/surefire-reports/com.ys.recursive.RecursionTest.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataStructures/target/surefire-reports/com.ys.stack.PolandNotationTest.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataStructures/target/surefire-reports/com.ys.stack.StackTest.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataStructures/target/test-classes/META-INF/dataStructures.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataStructures/target/test-classes/com/ys/SpringbootRedisApplicationTests.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataStructures/target/test-classes/com/ys/Tester.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataStructures/target/test-classes/com/ys/array/SparsearrayTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataStructures/target/test-classes/com/ys/hash/HashTabTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataStructures/target/test-classes/com/ys/huffmancode/HuffmanCodeTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataStructures/target/test-classes/com/ys/huffmantree/HuffmanTreeTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataStructures/target/test-classes/com/ys/list/DoubleLinkListTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataStructures/target/test-classes/com/ys/list/ListTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataStructures/target/test-classes/com/ys/list/josepfuTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataStructures/target/test-classes/com/ys/recursive/MiGongTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataStructures/target/test-classes/com/ys/recursive/QueueEightTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataStructures/target/test-classes/com/ys/recursive/RecursionTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataStructures/target/test-classes/com/ys/search/BinarySearchTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataStructures/target/test-classes/com/ys/search/FibonacciSearchTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataStructures/target/test-classes/com/ys/search/InsertValueSearchTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataStructures/target/test-classes/com/ys/search/SeqSearchTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataStructures/target/test-classes/com/ys/sort/BarrelSortTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataStructures/target/test-classes/com/ys/sort/BubbleSortTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataStructures/target/test-classes/com/ys/sort/InsertSortTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataStructures/target/test-classes/com/ys/sort/MergetSortTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataStructures/target/test-classes/com/ys/sort/QuickSortTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataStructures/target/test-classes/com/ys/sort/RadixSortTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataStructures/target/test-classes/com/ys/sort/SelectSortTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataStructures/target/test-classes/com/ys/sort/ShellSortTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataStructures/target/test-classes/com/ys/stack/PolandNotationTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataStructures/target/test-classes/com/ys/stack/StackTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataStructures/target/test-classes/com/ys/tree/ArrBinaryTreeTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataStructures/target/test-classes/com/ys/tree/BinaryTreeTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataStructures/target/test-classes/com/ys/tree/HeapSortTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataStructures/target/test-classes/com/ys/tree/ThreadedBinaryTreeTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/decorator-pattern/decorator-pattern.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/decorator-pattern/target/classes/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/decorator-pattern/target/classes/banner.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/decorator-pattern/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/decorator-pattern/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/factory-abstract/factory-abstract.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/factory-abstract/factory-method (1).iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/factory-abstract/target/classes/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/factory-abstract/target/classes/banner.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/factory-method/factory-method.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/factory-method/target/classes/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/factory-method/target/classes/banner.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prototype-pattern/prototype-pattern.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prototype-pattern/target/classes/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prototype-pattern/target/classes/banner.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/simple-factory/simple-factory.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/simple-factory/target/classes/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/simple-factory/target/classes/banner.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/singleton/singleton.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/singleton/target/classes/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/singleton/target/classes/banner.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-shiro-jwt/springboot-shiro-jwt.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-shiro-jwt/target/classes/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-shiro-jwt/target/classes/demo.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-shiro-jwt/target/classes/mapper/userMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/synchronization-collectdata/target/classes/META-INF/synchronization-collectdata.kotlin_module" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataStructures/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/dataStructures/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataStructures/src/test/java/com/ys/huffmancode/HuffmanCodeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/dataStructures/src/test/java/com/ys/huffmancode/HuffmanCodeTest.java" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JUnit4 Test Class" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JRebelWorkspace">
+    <option name="jrebelEnabledAutocompile" value="true" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="E:/apache-maven-3.6.1" />
+        <option name="userSettingsFile" value="E:\apache-maven-3.6.1\conf\settings-aliyun.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+        <option name="vmOptionsForImporter" value="-Xmx768m " />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1OXUb8utMhcyrWadGOid2NLgJuU" />
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>Ali-Check</id>
+          </State>
+          <State>
+            <id>Class structureJava</id>
+          </State>
+          <State>
+            <id>Code maturity issuesJava</id>
+          </State>
+          <State>
+            <id>Google Web Toolkit issues</id>
+          </State>
+          <State>
+            <id>JUnit issuesJava</id>
+          </State>
+          <State>
+            <id>Java</id>
+          </State>
+          <State>
+            <id>Java 5Java language level migration aidsJava</id>
+          </State>
+          <State>
+            <id>Java 7Java language level migration aidsJava</id>
+          </State>
+          <State>
+            <id>Java 8Java language level migration aidsJava</id>
+          </State>
+          <State>
+            <id>Java language level migration aidsJava</id>
+          </State>
+          <State>
+            <id>Javadoc issuesJava</id>
+          </State>
+          <State>
+            <id>Numeric issuesJava</id>
+          </State>
+          <State>
+            <id>Spring</id>
+          </State>
+          <State>
+            <id>Spring AOPSpring</id>
+          </State>
+          <State>
+            <id>TestNGJava</id>
+          </State>
+          <State>
+            <id>Threading issuesJava</id>
+          </State>
+        </expanded-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="GenerateAntBuildDialog.backupFiles" value="true" />
+    <property name="GenerateAntBuildDialog.enableUiFormCompile" value="true" />
+    <property name="GenerateAntBuildDialog.forceTargetJdk" value="true" />
+    <property name="GenerateAntBuildDialog.outputFileNameProperty" value="springboot2.0-chapter-demo" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelOrder2" value="2" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RequestMappingsPanelWidth2" value="75" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="add_unversioned_files" value="$PROJECT_DIR$/log/log.log" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="ignore_missing_gitignore" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../synchronization-wizard-seed/pom.xml" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="leetcode.id" />
+    <property name="show.run.dashboard.notification" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.ys.controller" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.ys.binarysorttree" />
+      <recent name="com.jzt.sync.core" />
+      <recent name="com.jzt.sync.model" />
+      <recent name="com.ys.huffmancode" />
+      <recent name="com.ys.huffmantree" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\github\springboot2.0-chapter-demo\synchronization-collectdata\src\main\java\com\jzt\sync" />
+      <recent name="D:\github\springboot2.0-chapter-demo\synchronization-collectdata\src\main\java\com\jzt\sync\core" />
+      <recent name="D:\github\springboot2.0-chapter-demo\dataStructures" />
+      <recent name="D:\github\springboot2.0-chapter-demo\dataStructures\src\main\java\com\ys\service\stack" />
+      <recent name="D:\github\springboot2.0-chapter-demo\dataStructures\src\main\java\com\ys\service\list\doublelinklist" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.ys.list" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.BinarySortTest.binarySort">
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BinarySortTest.binarySort" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="dataStructures" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ys.binarysorttree.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ys.binarysorttree" />
+      <option name="MAIN_CLASS_NAME" value="com.ys.binarysorttree.BinarySortTest" />
+      <option name="METHOD_NAME" value="binarySort" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HeapSortTest.testPolandNotation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="dataStructures" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ys.tree.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ys.tree" />
+      <option name="MAIN_CLASS_NAME" value="com.ys.tree.HeapSortTest" />
+      <option name="METHOD_NAME" value="testPolandNotation" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HuffmanCodeTest.testHuffmanTree" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="dataStructures" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ys.huffmancode.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ys.huffmancode" />
+      <option name="MAIN_CLASS_NAME" value="com.ys.huffmancode.HuffmanCodeTest" />
+      <option name="METHOD_NAME" value="testHuffmanTree" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HuffmanTreeTest.testHuffmanTree" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="dataStructures" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ys.huffmantree.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ys.huffmantree" />
+      <option name="MAIN_CLASS_NAME" value="com.ys.huffmantree.HuffmanTreeTest" />
+      <option name="METHOD_NAME" value="testHuffmanTree" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ThreadedBinaryTreeTest.testPolandNotation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="dataStructures" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ys.tree.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ys.tree" />
+      <option name="MAIN_CLASS_NAME" value="com.ys.tree.ThreadedBinaryTreeTest" />
+      <option name="METHOD_NAME" value="testPolandNotation" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Application (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="synchronization-collectdata" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.jzt.sync.Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="simple-factory" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ys.Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OauthApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="oauth2" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yuqiyu.OauthApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ShiroJwtApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="springboot-shiro-jwt" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.howie.shirojwt.ShiroJwtApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="TestNG">
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.ThreadedBinaryTreeTest.testPolandNotation" />
+      <item itemvalue="JUnit.HeapSortTest.testPolandNotation" />
+      <item itemvalue="JUnit.HuffmanTreeTest.testHuffmanTree" />
+      <item itemvalue="JUnit.HuffmanCodeTest.testHuffmanTree" />
+      <item itemvalue="JUnit.BinarySortTest.binarySort" />
+      <item itemvalue="Spring Boot.ShiroJwtApplication" />
+      <item itemvalue="Spring Boot.Application" />
+      <item itemvalue="Spring Boot.OauthApplication" />
+      <item itemvalue="Spring Boot.Application (1)" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.BinarySortTest.binarySort" />
+        <item itemvalue="JUnit.HuffmanCodeTest.testHuffmanTree" />
+        <item itemvalue="JUnit.HuffmanTreeTest.testHuffmanTree" />
+        <item itemvalue="JUnit.HeapSortTest.testPolandNotation" />
+        <item itemvalue="JUnit.ThreadedBinaryTreeTest.testPolandNotation" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\Administrator\AppData\Roaming\Subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8f6b5ca5-d323-4f50-9553-89afaa7e1363" name="Default" comment="" />
+      <created>1544671539342</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1544671539342</updated>
+      <workItem from="1544671541232" duration="12000" />
+      <workItem from="1553137059011" duration="1508000" />
+      <workItem from="1553156326749" duration="2891000" />
+      <workItem from="1553485028403" duration="98000" />
+      <workItem from="1553562967038" duration="10120000" />
+      <workItem from="1553842691634" duration="1998000" />
+      <workItem from="1553915448855" duration="6351000" />
+      <workItem from="1554084438873" duration="8865000" />
+      <workItem from="1554166051706" duration="688000" />
+      <workItem from="1554169181338" duration="12462000" />
+      <workItem from="1554272098823" duration="5468000" />
+      <workItem from="1554338934480" duration="15486000" />
+      <workItem from="1554685677563" duration="5264000" />
+      <workItem from="1554774688985" duration="2987000" />
+      <workItem from="1555635505261" duration="9573000" />
+      <workItem from="1556094268537" duration="394000" />
+      <workItem from="1556438705267" duration="410000" />
+      <workItem from="1556439294933" duration="177000" />
+      <workItem from="1557900964698" duration="6213000" />
+      <workItem from="1557965685195" duration="3401000" />
+      <workItem from="1559265524951" duration="3146000" />
+      <workItem from="1560817432518" duration="6103000" />
+      <workItem from="1560827874261" duration="682000" />
+      <workItem from="1560913212621" duration="1769000" />
+      <workItem from="1560915908201" duration="877000" />
+      <workItem from="1561013445394" duration="7897000" />
+      <workItem from="1561340224923" duration="11376000" />
+      <workItem from="1561422709707" duration="28904000" />
+      <workItem from="1561595870940" duration="29738000" />
+      <workItem from="1561706317469" duration="9027000" />
+      <workItem from="1562144526392" duration="1773000" />
+      <workItem from="1562290950863" duration="5671000" />
+      <workItem from="1562554353762" duration="14016000" />
+      <workItem from="1562636350354" duration="2803000" />
+      <workItem from="1562812293765" duration="1035000" />
+      <workItem from="1563498457935" duration="9095000" />
+      <workItem from="1563756912050" duration="19364000" />
+      <workItem from="1563846390581" duration="6908000" />
+      <workItem from="1563865126751" duration="3637000" />
+      <workItem from="1563929000105" duration="16451000" />
+      <workItem from="1564017118849" duration="5997000" />
+      <workItem from="1564123508154" duration="8321000" />
+      <workItem from="1564387273450" duration="3141000" />
+      <workItem from="1564448362647" duration="3947000" />
+      <workItem from="1564538479930" duration="813000" />
+      <workItem from="1564559464828" duration="4298000" />
+      <workItem from="1564641173184" duration="7027000" />
+      <workItem from="1564712397808" duration="7109000" />
+      <workItem from="1564968937736" duration="11175000" />
+      <workItem from="1566175080419" duration="1444000" />
+      <workItem from="1566444183464" duration="8388000" />
+      <workItem from="1566523941865" duration="4726000" />
+      <workItem from="1566893143896" duration="5177000" />
+      <workItem from="1567387279218" duration="18769000" />
+      <workItem from="1567471620737" duration="1486000" />
+      <workItem from="1567557567818" duration="15293000" />
+      <workItem from="1567644116341" duration="17867000" />
+      <workItem from="1567729277020" duration="21034000" />
+      <workItem from="1567989493008" duration="2410000" />
+      <workItem from="1567992273272" duration="11994000" />
+      <workItem from="1568075581877" duration="9831000" />
+      <workItem from="1568163379916" duration="6711000" />
+      <workItem from="1568601962899" duration="3522000" />
+      <workItem from="1568614119053" duration="35547000" />
+      <workItem from="1568857981093" duration="21581000" />
+      <workItem from="1569198952386" duration="7505000" />
+      <workItem from="1569308210154" duration="7949000" />
+      <workItem from="1569459340309" duration="22078000" />
+      <workItem from="1569823701142" duration="597000" />
+      <workItem from="1570503804555" duration="5680000" />
+      <workItem from="1570609148430" duration="1912000" />
+      <workItem from="1570669044717" duration="30355000" />
+      <workItem from="1571012398789" duration="9435000" />
+      <workItem from="1571121982757" duration="5708000" />
+      <workItem from="1571967805253" duration="12054000" />
+      <workItem from="1572225720398" duration="5912000" />
+      <workItem from="1572396626010" duration="1342000" />
+      <workItem from="1572398579774" duration="14832000" />
+      <workItem from="1572484141651" duration="1448000" />
+      <workItem from="1572571691103" duration="3802000" />
+      <workItem from="1572588877589" duration="5621000" />
+      <workItem from="1572828375742" duration="15402000" />
+      <workItem from="1572915250299" duration="765000" />
+      <workItem from="1573522302650" duration="8359000" />
+      <workItem from="1573606356121" duration="1826000" />
+      <workItem from="1573697029198" duration="204000" />
+      <workItem from="1574057161051" duration="2741000" />
+      <workItem from="1574143647315" duration="3179000" />
+    </task>
+    <task id="LOCAL-00056" summary="增加递归迷宫">
+      <created>1564021047221</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1564021047221</updated>
+    </task>
+    <task id="LOCAL-00057" summary="增加递归迷宫">
+      <created>1564021142021</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1564021142021</updated>
+    </task>
+    <task id="LOCAL-00058" summary="增加递归迷宫">
+      <created>1564021193480</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1564021193481</updated>
+    </task>
+    <task id="LOCAL-00059" summary="增加递归中8皇后的问题">
+      <created>1564128382813</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1564128382813</updated>
+    </task>
+    <task id="LOCAL-00060" summary="增加冒泡排序">
+      <created>1564651494607</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1564651494607</updated>
+    </task>
+    <task id="LOCAL-00061" summary="增加选择排序">
+      <created>1564989184126</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1564989184126</updated>
+    </task>
+    <task id="LOCAL-00062" summary="增加选择排序">
+      <created>1564989419448</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1564989419449</updated>
+    </task>
+    <task id="LOCAL-00063" summary="增加选择排序">
+      <created>1566466288916</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1566466288916</updated>
+    </task>
+    <task id="LOCAL-00064" summary="增加希尔排序">
+      <created>1566899335533</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1566899335551</updated>
+    </task>
+    <task id="LOCAL-00065" summary="增加希尔排序的优化">
+      <created>1567390055377</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1567390055380</updated>
+    </task>
+    <task id="LOCAL-00066" summary="增加快速排序">
+      <created>1567413610003</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1567413610003</updated>
+    </task>
+    <task id="LOCAL-00067" summary="增加归并排序">
+      <created>1567417678459</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1567417678459</updated>
+    </task>
+    <task id="LOCAL-00068" summary="增加归并排序">
+      <created>1567577989983</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1567577989983</updated>
+    </task>
+    <task id="LOCAL-00069" summary="增加归并排序">
+      <created>1567578704420</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1567578704420</updated>
+    </task>
+    <task id="LOCAL-00070" summary="增加基数排序">
+      <created>1567590452912</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1567590452912</updated>
+    </task>
+    <task id="LOCAL-00071" summary="增加基数排序">
+      <created>1567651823931</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1567651823932</updated>
+    </task>
+    <task id="LOCAL-00072" summary="增加基数（桶）排序，并且升级兼容正负数的排序">
+      <created>1567668335942</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1567668335942</updated>
+    </task>
+    <task id="LOCAL-00073" summary="增加线性查找">
+      <created>1567673539522</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1567673539522</updated>
+    </task>
+    <task id="LOCAL-00074" summary="增加二分查找，并且有查找多个相同的数字">
+      <created>1567676615772</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1567676615772</updated>
+    </task>
+    <task id="LOCAL-00075" summary="增加二分查找，并且有查找多个相同的数字">
+      <created>1567676801065</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1567676801065</updated>
+    </task>
+    <task id="LOCAL-00076" summary="增加插值查找">
+      <created>1567737444699</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1567737444700</updated>
+    </task>
+    <task id="LOCAL-00077" summary="增加插值查找">
+      <created>1567737715381</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1567737715381</updated>
+    </task>
+    <task id="LOCAL-00078" summary="增加斐波那契（黄金分割点）的查找算法">
+      <created>1567754814012</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1567754814013</updated>
+    </task>
+    <task id="LOCAL-00079" summary="增加HashTable，完成增删查和遍历">
+      <created>1568017725826</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1568017725826</updated>
+    </task>
+    <task id="LOCAL-00080" summary="增加桶排序的功能">
+      <created>1568080058902</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1568080058902</updated>
+    </task>
+    <task id="LOCAL-00081" summary="增加桶排序的功能">
+      <created>1568080206688</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1568080206688</updated>
+    </task>
+    <task id="LOCAL-00082" summary="增加普通二叉树的前序、中序、后序的遍历，节点的删除，并且写了叶子节点删除后拼接">
+      <created>1568627620618</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1568627620618</updated>
+    </task>
+    <task id="LOCAL-00083" summary="增加普通二叉树的前序、中序、后序的遍历，节点的删除，并且写了叶子节点删除后拼接,并且实现自动将叶子节点进行拼接升级">
+      <created>1568681117938</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1568681117938</updated>
+    </task>
+    <task id="LOCAL-00084" summary="增加普通二叉树的前序、中序、后序的遍历，节点的删除，并且写了叶子节点删除后拼接,并且实现自动将叶子节点进行拼接升级">
+      <created>1568681301222</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1568681301222</updated>
+    </task>
+    <task id="LOCAL-00085" summary="增加普通二叉树的前序、中序、后序的遍历，节点的删除，并且写了叶子节点删除后拼接,并且实现自动将叶子节点进行拼接升级">
+      <created>1568682090763</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1568682090763</updated>
+    </task>
+    <task id="LOCAL-00086" summary="增加顺序存储二叉树，包括前序、中序、后序">
+      <created>1568687708351</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1568687708351</updated>
+    </task>
+    <task id="LOCAL-00087" summary="增加顺序存储二叉树，包括前序、中序、后序">
+      <created>1568688489063</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1568688489063</updated>
+    </task>
+    <task id="LOCAL-00088" summary="增加线索化二叉树">
+      <created>1568712310687</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1568712310687</updated>
+    </task>
+    <task id="LOCAL-00089" summary="增加前序、中序、后序线索化二叉树">
+      <created>1568886772276</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1568886772276</updated>
+    </task>
+    <task id="LOCAL-00090" summary="增加前序、中序、后序二叉树的线索化和遍历，有难度">
+      <created>1568943116102</created>
+      <option name="number" value="00090" />
+      <option name="presentableId" value="LOCAL-00090" />
+      <option name="project" value="LOCAL" />
+      <updated>1568943116102</updated>
+    </task>
+    <task id="LOCAL-00091" summary="增加前序、中序、后序二叉树的线索化和遍历，有难度">
+      <created>1568949753396</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1568949753396</updated>
+    </task>
+    <task id="LOCAL-00092" summary="增加堆排序">
+      <created>1569208373429</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1569208373429</updated>
+    </task>
+    <task id="LOCAL-00093" summary="增加堆排序">
+      <created>1569209189753</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1569209189753</updated>
+    </task>
+    <task id="LOCAL-00094" summary="增加堆排序">
+      <created>1569209403138</created>
+      <option name="number" value="00094" />
+      <option name="presentableId" value="LOCAL-00094" />
+      <option name="project" value="LOCAL" />
+      <updated>1569209403139</updated>
+    </task>
+    <task id="LOCAL-00095" summary="增加堆排序">
+      <created>1569209467526</created>
+      <option name="number" value="00095" />
+      <option name="presentableId" value="LOCAL-00095" />
+      <option name="project" value="LOCAL" />
+      <updated>1569209467526</updated>
+    </task>
+    <task id="LOCAL-00096" summary="增加堆排序">
+      <created>1569209607504</created>
+      <option name="number" value="00096" />
+      <option name="presentableId" value="LOCAL-00096" />
+      <option name="project" value="LOCAL" />
+      <updated>1569209607504</updated>
+    </task>
+    <task id="LOCAL-00097" summary="增加堆排序">
+      <created>1569209719134</created>
+      <option name="number" value="00097" />
+      <option name="presentableId" value="LOCAL-00097" />
+      <option name="project" value="LOCAL" />
+      <updated>1569209719135</updated>
+    </task>
+    <task id="LOCAL-00098" summary="增加堆排序">
+      <created>1570506098405</created>
+      <option name="number" value="00098" />
+      <option name="presentableId" value="LOCAL-00098" />
+      <option name="project" value="LOCAL" />
+      <updated>1570506098406</updated>
+    </task>
+    <task id="LOCAL-00099" summary="增加堆排序">
+      <created>1570516170805</created>
+      <option name="number" value="00099" />
+      <option name="presentableId" value="LOCAL-00099" />
+      <option name="project" value="LOCAL" />
+      <updated>1570516170805</updated>
+    </task>
+    <task id="LOCAL-00100" summary="增加霍夫曼树的实现">
+      <created>1570678763856</created>
+      <option name="number" value="00100" />
+      <option name="presentableId" value="LOCAL-00100" />
+      <option name="project" value="LOCAL" />
+      <updated>1570678763856</updated>
+    </task>
+    <task id="LOCAL-00101" summary="增加霍夫曼树的实现">
+      <created>1570678930936</created>
+      <option name="number" value="00101" />
+      <option name="presentableId" value="LOCAL-00101" />
+      <option name="project" value="LOCAL" />
+      <updated>1570678930936</updated>
+    </task>
+    <task id="LOCAL-00102" summary="增加霍夫曼树的实现">
+      <created>1570694186873</created>
+      <option name="number" value="00102" />
+      <option name="presentableId" value="LOCAL-00102" />
+      <option name="project" value="LOCAL" />
+      <updated>1570694186873</updated>
+    </task>
+    <task id="LOCAL-00103" summary="增加霍夫曼编码">
+      <created>1570698307437</created>
+      <option name="number" value="00103" />
+      <option name="presentableId" value="LOCAL-00103" />
+      <option name="project" value="LOCAL" />
+      <updated>1570698307437</updated>
+    </task>
+    <task id="LOCAL-00104" summary="增加霍夫曼编码">
+      <created>1572426864606</created>
+      <option name="number" value="00104" />
+      <option name="presentableId" value="LOCAL-00104" />
+      <option name="project" value="LOCAL" />
+      <updated>1572426864608</updated>
+    </task>
+    <option name="localTasksCounter" value="105" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/synchronization-wizard" />
+      <path value="$PROJECT_DIR$/synchronization-collectdata" />
+    </ignored-roots>
+    <MESSAGE value="增加递归迷宫" />
+    <MESSAGE value="增加递归中8皇后的问题" />
+    <MESSAGE value="增加冒泡排序" />
+    <MESSAGE value="增加选择排序" />
+    <MESSAGE value="增加希尔排序" />
+    <MESSAGE value="增加希尔排序的优化" />
+    <MESSAGE value="增加快速排序" />
+    <MESSAGE value="增加归并排序" />
+    <MESSAGE value="增加基数排序" />
+    <MESSAGE value="增加基数（桶）排序，并且升级兼容正负数的排序" />
+    <MESSAGE value="增加线性查找" />
+    <MESSAGE value="增加二分查找，并且有查找多个相同的数字" />
+    <MESSAGE value="增加插值查找" />
+    <MESSAGE value="增加斐波那契（黄金分割点）的查找算法" />
+    <MESSAGE value="增加HashTable，完成增删查和遍历" />
+    <MESSAGE value="增加桶排序的功能" />
+    <MESSAGE value="增加普通二叉树的前序、中序、后序的遍历，节点的删除，并且写了叶子节点删除后拼接" />
+    <MESSAGE value="增加普通二叉树的前序、中序、后序的遍历，节点的删除，并且写了叶子节点删除后拼接,并且实现自动将叶子节点进行拼接升级" />
+    <MESSAGE value="增加顺序存储二叉树，包括前序、中序、后序" />
+    <MESSAGE value="增加线索化二叉树" />
+    <MESSAGE value="增加前序、中序、后序线索化二叉树" />
+    <MESSAGE value="增加前序、中序、后序二叉树的线索化和遍历，有难度" />
+    <MESSAGE value="增加堆排序" />
+    <MESSAGE value="增加霍夫曼树的实现" />
+    <MESSAGE value="增加霍夫曼编码" />
+    <option name="LAST_COMMIT_MESSAGE" value="增加霍夫曼编码" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/dataStructures/src/test/java/com/ys/list/ListTest.java</url>
+          <line>93</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/dataStructures/src/main/java/com/ys/service/list/singlelinkedlist/SingleLinkedList.java</url>
+          <line>186</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/dataStructures/src/main/java/com/ys/service/search/FibonacciSearch.java</url>
+          <line>52</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/dataStructures/src/main/java/com/ys/service/search/FibonacciSearch.java</url>
+          <line>67</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/dataStructures/src/main/java/com/ys/service/search/FibonacciSearch.java</url>
+          <line>80</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="JUnit">
+        <watch expression="arr[j]" />
+      </configuration>
+      <configuration name="SpringBootApplicationConfigurationType">
+        <watch expression="xMLUtil.getBean()" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

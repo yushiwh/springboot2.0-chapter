@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="synchronization-collectdata" />
+        <module name="dataStructures" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="adapter-pattern" target="1.8" />
+      <module name="adapter-pattern (1)" target="1.8" />
+      <module name="alllocks" target="1.8" />
+      <module name="bridge-pattern" target="1.8" />
+      <module name="builder-pattern" target="1.8" />
+      <module name="composite-pattern" target="1.8" />
+      <module name="dataStructures" target="1.8" />
+      <module name="decorator-pattern" target="1.8" />
+      <module name="facade-pattern" target="1.8" />
+      <module name="factory-abstract" target="1.8" />
+      <module name="factory-method" target="1.8" />
+      <module name="factory-method (1)" target="1.8" />
+      <module name="oauth2" target="1.8" />
+      <module name="practice" target="1.8" />
+      <module name="prototype-pattern" target="1.8" />
+      <module name="simple-factory" target="1.8" />
+      <module name="singleton" target="1.8" />
+      <module name="springboot-shiro-jwt" target="1.8" />
+      <module name="synchronization-collectdata" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="adapter-pattern" options="-parameters" />
+      <module name="adapter-pattern (1)" options="-parameters" />
+      <module name="alllocks" options="-parameters" />
+      <module name="bridge-pattern" options="-parameters" />
+      <module name="builder-pattern" options="-parameters" />
+      <module name="composite-pattern" options="-parameters" />
+      <module name="dataStructures" options="-parameters" />
+      <module name="decorator-pattern" options="-parameters" />
+      <module name="factory-abstract" options="-parameters" />
+      <module name="factory-method" options="-parameters" />
+      <module name="factory-method (1)" options="-parameters" />
+      <module name="oauth2" options="-parameters" />
+      <module name="practice" options="-parameters" />
+      <module name="prototype-pattern" options="-parameters" />
+      <module name="simple-factory" options="-parameters" />
+      <module name="singleton" options="-parameters" />
+      <module name="synchronization-collectdata" options="-parameters" />
+    </option>
+  </component>
+</project>
