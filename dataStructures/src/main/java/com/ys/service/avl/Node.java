@@ -176,7 +176,6 @@ public class Node {
                 // 递归的向右子树添加
                 this.right.add(node);
             }
-
         }
         //当添加完一个结点后，如果: (右子树的高度-左子树的高度) > 1 , 左旋转
         if (rightHeight() - leftHeight() > 1) {
