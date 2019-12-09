@@ -9,10 +9,9 @@
 package com.ys.avl;
 
 import com.ys.Tester;
-import com.ys.service.avl.AvlTree;
 import com.ys.service.avl.Node;
+import com.ys.service.avl.AvlTree;
 import org.junit.Test;
-import org.springframework.beans.factory.annotation.Autowired;
 
 /**
  * 〈avl〉
@@ -56,5 +55,7 @@ public class AvlTest extends Tester {
         System.out.println("树的左子树高度=" + avlTree.getRoot().leftHeight()); // 2
         System.out.println("树的右子树高度=" + avlTree.getRoot().rightHeight()); // 2
         System.out.println("当前的根结点=" + avlTree.getRoot());//6
+        System.out.println("当前的根结点的左子节点=" + avlTree.getRoot().left);
+        System.out.println("当前的根结点的右子节点=" + avlTree.getRoot().right);
     }
 }

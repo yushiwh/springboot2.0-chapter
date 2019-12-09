@@ -8,7 +8,6 @@
  */
 package com.ys.service.avl;
 
-import org.springframework.stereotype.Component;
 
 /**
  * 〈AVL:平衡二叉树〉
@@ -17,7 +16,7 @@ import org.springframework.stereotype.Component;
  * @create 2019/12/4
  * @since 1.0.0
  */
-@Component
+
 public class AvlTree {
     private Node root;
 

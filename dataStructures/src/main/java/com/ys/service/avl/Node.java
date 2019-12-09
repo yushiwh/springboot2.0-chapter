@@ -17,8 +17,8 @@ package com.ys.service.avl;
  */
 public class Node {
     int value;
-    Node left;
-    Node right;
+    public Node left;
+    public Node right;
 
     public Node(int value) {
         this.value = value;
