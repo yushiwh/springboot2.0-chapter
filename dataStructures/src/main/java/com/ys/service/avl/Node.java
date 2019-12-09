@@ -188,7 +188,7 @@ public class Node {
                 //直接进行左旋转即可
             }
             leftRotate(); //左旋转..
-            return; //必须要!!!
+            return; //已经平衡，就必须要!!!后面就不需要重新进行判断了
         }
         //当添加完一个结点后，如果 (左子树的高度 - 右子树的高度) > 1, 右旋转
         if (leftHeight() - rightHeight() > 1) {
